@@ -1,0 +1,18 @@
+attempt=0
+returncode=0
+elapsed_sec=7.33
+
+STDOUT:
+Epoch: 001, Loss: 0.6437, Val Acc: 0.7778, Val F1: 0.4375
+Epoch: 002, Loss: 0.6389, Val Acc: 0.7778, Val F1: 0.4375
+Epoch: 003, Loss: 0.6339, Val Acc: 0.7778, Val F1: 0.4375
+Epoch: 004, Loss: 0.6283, Val Acc: 0.7778, Val F1: 0.4375
+Epoch: 005, Loss: 0.6235, Val Acc: 0.7778, Val F1: 0.4375
+Epoch: 006, Loss: 0.6183, Val Acc: 0.7778, Val F1: 0.4375
+Early stopping triggered.
+
+
+STDERR:
+C:\Users\Tuga\Desktop\LLM test\venv1\Lib\site-packages\torch_geometric\deprecation.py:26: UserWarning: 'data.DataLoader' is deprecated, use 'loader.DataLoader' instead
+  warnings.warn(out)
+

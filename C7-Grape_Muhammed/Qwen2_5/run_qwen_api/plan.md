@@ -1,0 +1,8 @@
+- Load and preprocess the training and test data using the provided baseline function.
+- Define a simple yet effective GNN model using `torch_geometric`.
+- Implement a data loader to handle batches of graphs.
+- Train the model on the training data, using early stopping to prevent overfitting.
+- Evaluate the model on a validation set to tune hyperparameters.
+- Generate predictions for the test set.
+- Write the predictions to `submission.csv` in the required format.
+- Ensure reproducibility by setting random seeds.
