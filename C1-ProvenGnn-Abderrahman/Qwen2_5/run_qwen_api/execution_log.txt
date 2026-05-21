@@ -1,0 +1,51 @@
+attempt=1
+returncode=0
+elapsed_sec=3038.26
+
+STDOUT:
+Epoch: 001, Loss: 0.8514, Train Acc: 0.7797, Val Acc: 0.7791, Val F1: 0.4552
+Epoch: 002, Loss: 0.4484, Train Acc: 0.8222, Val Acc: 0.8032, Val F1: 0.5878
+Epoch: 003, Loss: 0.3737, Train Acc: 0.8651, Val Acc: 0.8112, Val F1: 0.6785
+Epoch: 004, Loss: 0.3581, Train Acc: 0.8566, Val Acc: 0.8153, Val F1: 0.6349
+Epoch: 005, Loss: 0.3179, Train Acc: 0.8070, Val Acc: 0.8072, Val F1: 0.5697
+Epoch: 006, Loss: 0.3276, Train Acc: 0.8767, Val Acc: 0.8153, Val F1: 0.6429
+Epoch: 007, Loss: 0.3160, Train Acc: 0.8887, Val Acc: 0.8353, Val F1: 0.7333
+Epoch: 008, Loss: 0.3911, Train Acc: 0.8651, Val Acc: 0.8032, Val F1: 0.6458
+Epoch: 009, Loss: 0.3439, Train Acc: 0.8668, Val Acc: 0.8313, Val F1: 0.6808
+Epoch: 010, Loss: 0.3049, Train Acc: 0.8767, Val Acc: 0.8193, Val F1: 0.6683
+Epoch: 011, Loss: 0.3118, Train Acc: 0.8668, Val Acc: 0.8233, Val F1: 0.6656
+Epoch: 012, Loss: 0.3016, Train Acc: 0.8262, Val Acc: 0.8112, Val F1: 0.6046
+Epoch: 013, Loss: 0.2727, Train Acc: 0.8977, Val Acc: 0.8273, Val F1: 0.7059
+Epoch: 014, Loss: 0.3361, Train Acc: 0.8829, Val Acc: 0.8032, Val F1: 0.6706
+Epoch: 015, Loss: 0.2974, Train Acc: 0.8945, Val Acc: 0.8313, Val F1: 0.6873
+Epoch: 016, Loss: 0.2572, Train Acc: 0.9075, Val Acc: 0.8193, Val F1: 0.6808
+Epoch: 017, Loss: 0.2348, Train Acc: 0.9053, Val Acc: 0.8193, Val F1: 0.7424
+Epoch: 018, Loss: 0.2484, Train Acc: 0.9066, Val Acc: 0.8273, Val F1: 0.7203
+Epoch: 019, Loss: 0.2858, Train Acc: 0.9062, Val Acc: 0.8193, Val F1: 0.7025
+Epoch: 020, Loss: 0.2365, Train Acc: 0.9182, Val Acc: 0.8193, Val F1: 0.7246
+Epoch: 021, Loss: 0.2101, Train Acc: 0.9231, Val Acc: 0.8273, Val F1: 0.6830
+Epoch: 022, Loss: 0.2288, Train Acc: 0.9312, Val Acc: 0.8273, Val F1: 0.7109
+Epoch: 023, Loss: 0.1978, Train Acc: 0.9267, Val Acc: 0.8434, Val F1: 0.7647
+Epoch: 024, Loss: 0.2085, Train Acc: 0.9223, Val Acc: 0.8353, Val F1: 0.6916
+Epoch: 025, Loss: 0.2058, Train Acc: 0.9267, Val Acc: 0.8313, Val F1: 0.6934
+Epoch: 026, Loss: 0.1804, Train Acc: 0.8968, Val Acc: 0.8514, Val F1: 0.7217
+Epoch: 027, Loss: 0.1993, Train Acc: 0.9276, Val Acc: 0.8514, Val F1: 0.7702
+Epoch: 028, Loss: 0.1932, Train Acc: 0.9223, Val Acc: 0.8514, Val F1: 0.7631
+Epoch: 029, Loss: 0.1745, Train Acc: 0.9437, Val Acc: 0.8514, Val F1: 0.7512
+Epoch: 030, Loss: 0.1635, Train Acc: 0.9410, Val Acc: 0.8434, Val F1: 0.7613
+Epoch: 031, Loss: 0.1741, Train Acc: 0.9218, Val Acc: 0.8153, Val F1: 0.7606
+Epoch: 032, Loss: 0.1653, Train Acc: 0.9383, Val Acc: 0.8474, Val F1: 0.7330
+Epoch: 033, Loss: 0.1780, Train Acc: 0.9446, Val Acc: 0.8273, Val F1: 0.7368
+Epoch: 034, Loss: 0.1841, Train Acc: 0.9307, Val Acc: 0.8273, Val F1: 0.7508
+Epoch: 035, Loss: 0.1600, Train Acc: 0.9379, Val Acc: 0.8474, Val F1: 0.7330
+Epoch: 036, Loss: 0.1519, Train Acc: 0.9383, Val Acc: 0.8474, Val F1: 0.7548
+Epoch: 037, Loss: 0.1507, Train Acc: 0.9669, Val Acc: 0.8474, Val F1: 0.7508
+Early stopping!
+
+
+STDERR:
+C:\Users\Tuga\Desktop\LLM test\venv1\Lib\site-packages\torch_geometric\deprecation.py:26: UserWarning: 'data.DataLoader' is deprecated, use 'loader.DataLoader' instead
+  warnings.warn(out)
+C:\Users\Tuga\Desktop\LLM test\venv1\Lib\site-packages\torch_geometric\deprecation.py:26: UserWarning: 'data.DataLoader' is deprecated, use 'loader.DataLoader' instead
+  warnings.warn(out)
+

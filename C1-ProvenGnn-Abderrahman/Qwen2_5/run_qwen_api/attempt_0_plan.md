@@ -1,0 +1,8 @@
+- Load and preprocess the training and test datasets.
+- Use the provided `build_dataloader` function to create PyTorch Geometric DataLoaders.
+- Define a Graph Neural Network (GNN) model using `torch_geometric`.
+- Implement a training loop with early stopping based on validation performance.
+- Evaluate the model on the test set to generate predictions.
+- Write the predictions to `submission.csv` in the required format.
+- Set seeds for reproducibility.
+- Ensure the script runs on CPU within 60 minutes.
