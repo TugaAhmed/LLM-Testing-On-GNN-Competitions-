@@ -1,0 +1,50 @@
+attempt=3
+returncode=0
+elapsed_sec=7.04
+
+STDOUT:
+Epoch 001, Loss: 0.6291, Val Acc: 0.7105, Val F1: 0.4154
+Epoch 002, Loss: 0.6367, Val Acc: 0.7105, Val F1: 0.4154
+Epoch 003, Loss: 0.6436, Val Acc: 0.8158, Val F1: 0.7093
+Epoch 004, Loss: 0.6376, Val Acc: 0.7105, Val F1: 0.4154
+Epoch 005, Loss: 0.6099, Val Acc: 0.7105, Val F1: 0.4154
+Epoch 006, Loss: 0.6021, Val Acc: 0.7105, Val F1: 0.4154
+Epoch 007, Loss: 0.5964, Val Acc: 0.7105, Val F1: 0.4154
+Epoch 008, Loss: 0.6192, Val Acc: 0.7368, Val F1: 0.5052
+Epoch 009, Loss: 0.6154, Val Acc: 0.7632, Val F1: 0.7194
+Epoch 010, Loss: 0.5947, Val Acc: 0.7368, Val F1: 0.5052
+Epoch 011, Loss: 0.5830, Val Acc: 0.7105, Val F1: 0.4154
+Epoch 012, Loss: 0.5758, Val Acc: 0.7632, Val F1: 0.6262
+Epoch 013, Loss: 0.5684, Val Acc: 0.7632, Val F1: 0.6262
+Epoch 014, Loss: 0.5635, Val Acc: 0.7895, Val F1: 0.6833
+Epoch 015, Loss: 0.5742, Val Acc: 0.7895, Val F1: 0.7286
+Epoch 016, Loss: 0.5626, Val Acc: 0.7895, Val F1: 0.6833
+Epoch 017, Loss: 0.5536, Val Acc: 0.7895, Val F1: 0.7286
+Epoch 018, Loss: 0.5489, Val Acc: 0.7895, Val F1: 0.7286
+Epoch 019, Loss: 0.5336, Val Acc: 0.7895, Val F1: 0.6833
+Epoch 020, Loss: 0.5689, Val Acc: 0.7895, Val F1: 0.6833
+Epoch 021, Loss: 0.5299, Val Acc: 0.7632, Val F1: 0.7318
+Epoch 022, Loss: 0.6183, Val Acc: 0.7895, Val F1: 0.7286
+Epoch 023, Loss: 0.5284, Val Acc: 0.7895, Val F1: 0.6833
+Epoch 024, Loss: 0.5475, Val Acc: 0.7368, Val F1: 0.6801
+Epoch 025, Loss: 0.5792, Val Acc: 0.7632, Val F1: 0.7318
+Epoch 026, Loss: 0.5612, Val Acc: 0.7895, Val F1: 0.7286
+Epoch 027, Loss: 0.5345, Val Acc: 0.7895, Val F1: 0.6833
+Epoch 028, Loss: 0.5428, Val Acc: 0.8158, Val F1: 0.7348
+Epoch 029, Loss: 0.5350, Val Acc: 0.8421, Val F1: 0.7816
+Epoch 030, Loss: 0.5329, Val Acc: 0.8421, Val F1: 0.7816
+Epoch 031, Loss: 0.5308, Val Acc: 0.7895, Val F1: 0.7286
+Epoch 032, Loss: 0.5233, Val Acc: 0.7368, Val F1: 0.6801
+Epoch 033, Loss: 0.5274, Val Acc: 0.7632, Val F1: 0.7194
+Epoch 034, Loss: 0.5184, Val Acc: 0.7895, Val F1: 0.7286
+Epoch 035, Loss: 0.5548, Val Acc: 0.7895, Val F1: 0.7286
+Epoch 036, Loss: 0.5176, Val Acc: 0.7632, Val F1: 0.7194
+Epoch 037, Loss: 0.5344, Val Acc: 0.7632, Val F1: 0.7194
+Epoch 038, Loss: 0.5275, Val Acc: 0.7368, Val F1: 0.6801
+Epoch 039, Loss: 0.5176, Val Acc: 0.7895, Val F1: 0.7286
+Early stopping triggered.
+Submission files generated successfully.
+
+
+STDERR:
+

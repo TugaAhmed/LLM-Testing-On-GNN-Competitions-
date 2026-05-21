@@ -1,0 +1,9 @@
+- Load the MUTAG dataset using PyTorch Geometric.
+- Preprocess the dataset to include only the relevant graphs from `train.csv` and `test.csv`.
+- Define a GNN model architecture using Graph Convolutional Networks (GCN).
+- Implement a training loop with early stopping based on validation performance.
+- Evaluate the model on both the ideal and perturbed test sets.
+- Generate predictions for both test sets.
+- Write the predictions to `ideal_submission.csv` and `perturbed_submission.csv` in the required format.
+- Ensure reproducibility by setting seeds for numpy, torch, and random.
+- Directly implement the `perturb_graph` function in the script to avoid import errors.
