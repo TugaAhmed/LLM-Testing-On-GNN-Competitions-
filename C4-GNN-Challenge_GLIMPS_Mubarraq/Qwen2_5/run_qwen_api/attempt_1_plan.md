@@ -1,0 +1,8 @@
+- Load and preprocess the data from `train.csv` and `test.csv`.
+- Construct the graph using `graph_edges.csv` and `node_types.csv`.
+- Define a Graph Neural Network (GNN) model using `torch_geometric`.
+- Train the GNN model on the cfRNA dataset.
+- Validate the model using a subset of the training data.
+- Ensure that the validation indices correctly correspond to the cfRNA nodes.
+- Use the trained model to generate predictions for the placenta dataset.
+- Write the predictions to `submission.csv` in the required format.

@@ -1,0 +1,44 @@
+attempt=1
+returncode=1
+elapsed_sec=6.50
+
+STDOUT:
+
+
+STDERR:
+Traceback (most recent call last):
+  File "C:\Users\Tuga\Desktop\LLM test\GNN-Challenge_GLIMPS_Mubarraq\gnn-challenge\solution.py", line 152, in <module>
+    main()
+  File "C:\Users\Tuga\Desktop\LLM test\GNN-Challenge_GLIMPS_Mubarraq\gnn-challenge\solution.py", line 124, in main
+    f1, acc, prec, rec = evaluate(model, train_graph, val_idx)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tuga\Desktop\LLM test\GNN-Challenge_GLIMPS_Mubarraq\gnn-challenge\solution.py", line 60, in evaluate
+    f1 = f1_score(true.cpu(), pred.cpu(), average='binary')
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tuga\Desktop\LLM test\venv1\Lib\site-packages\sklearn\utils\_param_validation.py", line 218, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tuga\Desktop\LLM test\venv1\Lib\site-packages\sklearn\metrics\_classification.py", line 1565, in f1_score
+    return fbeta_score(
+           ^^^^^^^^^^^^
+  File "C:\Users\Tuga\Desktop\LLM test\venv1\Lib\site-packages\sklearn\utils\_param_validation.py", line 191, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tuga\Desktop\LLM test\venv1\Lib\site-packages\sklearn\metrics\_classification.py", line 1785, in fbeta_score
+    _, _, f, _ = precision_recall_fscore_support(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tuga\Desktop\LLM test\venv1\Lib\site-packages\sklearn\utils\_param_validation.py", line 191, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tuga\Desktop\LLM test\venv1\Lib\site-packages\sklearn\metrics\_classification.py", line 2100, in precision_recall_fscore_support
+    labels = _check_set_wise_labels(y_true, y_pred, average, labels, pos_label)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tuga\Desktop\LLM test\venv1\Lib\site-packages\sklearn\metrics\_classification.py", line 1864, in _check_set_wise_labels
+    y_type, y_true, y_pred, _ = _check_targets(y_true, y_pred)
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tuga\Desktop\LLM test\venv1\Lib\site-packages\sklearn\metrics\_classification.py", line 108, in _check_targets
+    check_consistent_length(y_true, y_pred, sample_weight)
+  File "C:\Users\Tuga\Desktop\LLM test\venv1\Lib\site-packages\sklearn\utils\validation.py", line 464, in check_consistent_length
+    raise ValueError(
+ValueError: Found input variables with inconsistent numbers of samples: [42, 320]
+
