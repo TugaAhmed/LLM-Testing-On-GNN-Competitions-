@@ -1,0 +1,7 @@
+- Load and preprocess the training, validation, and test datasets.
+- Define a Graph Neural Network (GNN) model using PyTorch Geometric.
+- Implement a pooling layer to aggregate node features into a graph-level representation.
+- Train the GNN model on the training dataset and validate it on the validation dataset.
+- Use the trained model to generate predictions for the test dataset.
+- Write the predictions to a `predictions.csv` file in the required format.
+- Ensure reproducibility by setting random seeds for numpy, torch, and random.

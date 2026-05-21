@@ -1,0 +1,223 @@
+<plan>
+- Correct the error in the `DataLoader` by using a custom collate function that can handle `torch_geometric.data.Data` objects.
+- Ensure that the adjacency matrix is converted to an edge index format compatible with PyTorch Geometric.
+- Continue with the training, validation, and prediction process.
+- Write the predictions to a `predictions.csv` file in the required format.
+- Ensure reproducibility by setting random seeds for numpy, torch, and random.
+</plan>
+
+<code>
+```python
+import os
+import pandas as pd
+import numpy as np
+import torch
+from torch.utils.data import Dataset, DataLoader
+import torch.nn as nn
+import torch.optim as optim
+import torch.nn.functional as F
+from torch_geometric.nn import GCNConv, global_mean_pool
+from torch_geometric.data import Data, Batch
+from sklearn.metrics import mean_absolute_error
+import random
+
+# Set seeds for reproducibility
+seed_value = 42
+np.random.seed(seed_value)
+torch.manual_seed(seed_value)
+random.seed(seed_value)
+
+# ==========================================
+# 1. Dataset Class
+# ==========================================
+class OasisDataset(Dataset):
+    def __init__(self, csv_file, adj_dir, is_test=False):
+        """
+        Args:
+            csv_file (str): Path to CSV containing node features and target age
+            adj_dir (str): Directory containing adjacency matrices as CSVs
+            is_test (bool): If True, target y is set to 0
+        """
+        super(OasisDataset, self).__init__()
+        self.df = pd.read_csv(csv_file)
+        self.adj_dir = adj_dir
+        self.is_test = is_test
+        
+        # Identify feature columns (Volume and Thickness)
+        self.feature_cols = [c for c in self.df.columns if 'volume' in c or 'thickness' in c]
+        
+
+    def __len__(self):
+        return len(self.df)
+
+
+    def __getitem__(self, idx):
+        # 1. Retrieve the row corresponding to the given index 
+        row = self.df.iloc[idx]
+        sub = row['Subject']        # Subject ID, e.g., "OAS30001" or "Test_Sub_001"
+        sess = row['MR_session']    # Session string, e.g., "OAS0001_MR_d0757" or "Sess_01"
+        
+        # 2. Get target value (age)
+        # If this is a test sample, set target to 0 else as is
+        if not self.is_test:
+            y = torch.tensor([row['age at visit']], dtype=torch.float)
+        else:
+            y = torch.tensor([0.0], dtype=torch.float)
+
+        # 3. Construct adjacency matrix filename
+        # The filename depends on whether this is train/val or test
+        # If Train/Val : remove "_MR_" from session to match adjacency file naming e.g., "OAS30001_MR_d0757" -> "OAS30001_d0757.csv"
+        # If Test: concatenate sub and sess with '-' e.g., "Test_Sub_001-Sess_01.csv"
+        if "Test_Sub" in sub:
+            adj_file = f"{sub}-{sess}.csv" # e.g. "Test_Sub_001-Sess_01.csv"
+        else:
+            sess_clean = sess.replace(f"{sub}_MR_", "")
+            adj_file = f"{sub}_{sess_clean}.csv" # e.g. "OAS30001_d0757.csv"
+        
+        # 4. Load adjacency matrix from CSV
+        # index_col=0 ignores row labels
+        adj_path = os.path.join(self.adj_dir, adj_file)
+        adj_mat = pd.read_csv(adj_path, index_col=0).values # numpy array of shape [num_nodes, num_nodes]
+        adj_mat = torch.tensor(adj_mat, dtype=torch.float)
+        
+        # Convert adjacency matrix to edge index
+        edge_index = torch.nonzero(adj_mat, as_tuple=True)
+        edge_attr = adj_mat[edge_index]
+        
+        # 5. Prepare node features
+        # Original format: 136 features = 68 volume + 68 thickness
+        # Reshape into: [68 nodes, 2 features] so that each node has [volume, thickness]
+        feat_raw = row[self.feature_cols].astype(float).values    # shape (136, ), first 68 columns are volume while next 68 columns are thickness
+        x = torch.tensor(
+            feat_raw.reshape(2, 68).T, # First reshape (2, 68) converts feat_raw to [[vol_1, vol_2, ..., vol_68], [thick_1, thick_2, ..., thick_68]], then transpose results each row = one node i.e. [[vol_1, thick_1], [vol_2, thick_2], ..., [vol_68, thick_68]]
+            dtype=torch.float
+        )                                           # shape [68, 2]
+
+        return Data(x=x, edge_index=edge_index, edge_attr=edge_attr, y=y, name=f"{sub}-{sess}")
+
+# Custom collate function for DataLoader
+def custom_collate(batch):
+    return Batch.from_data_list(batch)
+
+# ==========================================
+# 2. Model Definition
+# ==========================================
+class GNNModel(nn.Module):
+    def __init__(self, num_node_features):
+        super(GNNModel, self).__init__()
+        self.conv1 = GCNConv(num_node_features, 64)
+        self.conv2 = GCNConv(64, 32)
+        self.fc1 = nn.Linear(32, 16)
+        self.fc2 = nn.Linear(16, 1)
+
+    def forward(self, data):
+        x, edge_index, edge_attr, batch = data.x, data.edge_index, data.edge_attr, data.batch
+        x = self.conv1(x, edge_index, edge_attr)
+        x = F.relu(x)
+        x = self.conv2(x, edge_index, edge_attr)
+        x = F.relu(x)
+        x = global_mean_pool(x, batch)  # Pooling layer
+        x = self.fc1(x)
+        x = F.relu(x)
+        x = self.fc2(x)
+        return x
+
+# ==========================================
+# 3. Helper Functions
+# ==========================================
+def load_data(csv_file, adj_dir, is_test=False):
+    dataset = OasisDataset(csv_file=csv_file, adj_dir=adj_dir, is_test=is_test)
+    loader = DataLoader(dataset, batch_size=1, shuffle=(not is_test), collate_fn=custom_collate)
+    return loader
+
+def train_model(model, train_loader, val_loader, optimizer, criterion, epochs=50):
+    best_val_loss = float('inf')
+    for epoch in range(epochs):
+        model.train()
+        train_loss = 0
+        for batch in train_loader:
+            batch = batch.to('cpu')  # Ensure data is on CPU
+            optimizer.zero_grad()
+            out = model(batch)
+            loss = criterion(out, batch.y)
+            loss.backward()
+            optimizer.step()
+            train_loss += loss.item()
+
+        train_loss /= len(train_loader)
+        val_loss = evaluate_model(model, val_loader, criterion)
+        print(f'Epoch {epoch+1}/{epochs}, Train Loss: {train_loss:.4f}, Val Loss: {val_loss:.4f}')
+
+        if val_loss < best_val_loss:
+            best_val_loss = val_loss
+            torch.save(model.state_dict(), 'best_model.pth')
+
+def evaluate_model(model, data_loader, criterion):
+    model.eval()
+    total_loss = 0
+    true_ages = []
+    pred_ages = []
+
+    with torch.no_grad():
+        for batch in data_loader:
+            batch = batch.to('cpu')  # Ensure data is on CPU
+            out = model(batch)
+            loss = criterion(out, batch.y)
+            total_loss += loss.item()
+            true_ages.append(batch.y.item())
+            pred_ages.append(out.item())
+
+    total_loss /= len(data_loader)
+    mae = mean_absolute_error(true_ages, pred_ages)
+    return mae
+
+def generate_predictions(model, test_loader):
+    model.eval()
+    predictions = []
+
+    with torch.no_grad():
+        for batch in test_loader:
+            batch = batch.to('cpu')  # Ensure data is on CPU
+            out = model(batch)
+            predictions.append((batch.name[0], out.item()))
+
+    return predictions
+
+# ==========================================
+# 4. Main Execution
+# ==========================================
+if __name__ == "__main__":
+    base = './'
+    adj_matrices_dir = os.path.join(base, 'data/public/adjacency_matrices/')
+    train_data_path = os.path.join(base, 'data/public/train_data.csv')
+    val_data_path = os.path.join(base, 'data/public/val_data.csv')
+    test_data_path = os.path.join(base, 'data/public/test_data.csv')
+
+    # Create Dataset and DataLoaders
+    train_loader = load_data(csv_file=train_data_path, adj_dir=adj_matrices_dir, is_test=False)
+    val_loader = load_data(csv_file=val_data_path, adj_dir=adj_matrices_dir, is_test=False)
+    test_loader = load_data(csv_file=test_data_path, adj_dir=adj_matrices_dir, is_test=True)
+
+    # Initialize model, optimizer, and loss function
+    model = GNNModel(num_node_features=2)
+    optimizer = optim.Adam(model.parameters(), lr=0.001)
+    criterion = nn.L1Loss()
+
+    # Train the model
+    train_model(model, train_loader, val_loader, optimizer, criterion, epochs=50)
+
+    # Load the best model
+    model.load_state_dict(torch.load('best_model.pth'))
+
+    # Generate predictions for the test set
+    predictions = generate_predictions(model, test_loader)
+
+    # Write predictions to a CSV file
+    df_predictions = pd.DataFrame(predictions, columns=['subject_session', 'age_at_visit'])
+    df_predictions.to_csv('predictions.csv', index=False)
+
+    print("Predictions saved to predictions.csv")
+```
+</code>
+
+This revised script includes a custom collate function `custom_collate` that uses `Batch.from_data_list(batch)` to handle the `torch_geometric.data.Data` objects correctly. This should resolve the error and allow the script to run successfully.

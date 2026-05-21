@@ -1,0 +1,5 @@
+- Correct the error in the `DataLoader` by using a custom collate function that can handle `torch_geometric.data.Data` objects.
+- Ensure that the adjacency matrix is converted to an edge index format compatible with PyTorch Geometric.
+- Continue with the training, validation, and prediction process.
+- Write the predictions to a `predictions.csv` file in the required format.
+- Ensure reproducibility by setting random seeds for numpy, torch, and random.

@@ -1,0 +1,30 @@
+attempt=1
+returncode=1
+elapsed_sec=5.59
+
+STDOUT:
+
+
+STDERR:
+Traceback (most recent call last):
+  File "C:\Users\Tuga\Desktop\LLM test\C14_BrainAge\brain-age-gnn-oasis3\solution.py", line 193, in <module>
+    train_model(model, train_loader, val_loader, optimizer, criterion, epochs=50)
+  File "C:\Users\Tuga\Desktop\LLM test\C14_BrainAge\brain-age-gnn-oasis3\solution.py", line 124, in train_model
+    for batch in train_loader:
+                 ^^^^^^^^^^^^
+  File "C:\Users\Tuga\Desktop\LLM test\venv1\Lib\site-packages\torch\utils\data\dataloader.py", line 733, in __next__
+    data = self._next_data()
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tuga\Desktop\LLM test\venv1\Lib\site-packages\torch\utils\data\dataloader.py", line 789, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tuga\Desktop\LLM test\venv1\Lib\site-packages\torch\utils\data\_utils\fetch.py", line 55, in fetch
+    return self.collate_fn(data)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tuga\Desktop\LLM test\venv1\Lib\site-packages\torch\utils\data\_utils\collate.py", line 398, in default_collate
+    return collate(batch, collate_fn_map=default_collate_fn_map)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tuga\Desktop\LLM test\venv1\Lib\site-packages\torch\utils\data\_utils\collate.py", line 240, in collate
+    raise TypeError(default_collate_err_msg_format.format(elem_type))
+TypeError: default_collate: batch must contain tensors, numpy arrays, numbers, dicts or lists; found <class 'torch_geometric.data.data.Data'>
+

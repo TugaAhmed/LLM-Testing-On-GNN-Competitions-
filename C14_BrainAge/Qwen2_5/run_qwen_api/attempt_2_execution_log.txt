@@ -1,0 +1,39 @@
+attempt=2
+returncode=1
+elapsed_sec=5.86
+
+STDOUT:
+
+
+STDERR:
+Traceback (most recent call last):
+  File "C:\Users\Tuga\Desktop\LLM test\C14_BrainAge\brain-age-gnn-oasis3\solution.py", line 197, in <module>
+    train_model(model, train_loader, val_loader, optimizer, criterion, epochs=50)
+  File "C:\Users\Tuga\Desktop\LLM test\C14_BrainAge\brain-age-gnn-oasis3\solution.py", line 131, in train_model
+    out = model(batch)
+          ^^^^^^^^^^^^
+  File "C:\Users\Tuga\Desktop\LLM test\venv1\Lib\site-packages\torch\nn\modules\module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tuga\Desktop\LLM test\venv1\Lib\site-packages\torch\nn\modules\module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tuga\Desktop\LLM test\C14_BrainAge\brain-age-gnn-oasis3\solution.py", line 105, in forward
+    x = self.conv1(x, edge_index, edge_attr)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tuga\Desktop\LLM test\venv1\Lib\site-packages\torch\nn\modules\module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tuga\Desktop\LLM test\venv1\Lib\site-packages\torch\nn\modules\module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tuga\Desktop\LLM test\venv1\Lib\site-packages\torch_geometric\nn\conv\gcn_conv.py", line 263, in forward
+    out = self.propagate(edge_index, x=x, edge_weight=edge_weight)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tuga\AppData\Local\Temp\torch_geometric.nn.conv.gcn_conv_GCNConv_propagate_h4d3xliq.py", line 138, in propagate
+    mutable_size = self._check_input(edge_index, size)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tuga\Desktop\LLM test\venv1\Lib\site-packages\torch_geometric\nn\conv\message_passing.py", line 244, in _check_input
+    raise ValueError(
+ValueError: `MessagePassing.propagate` only supports integer tensors of shape `[2, num_messages]`, `torch_sparse.SparseTensor` or `torch.sparse.Tensor` for argument `edge_index`.
+
