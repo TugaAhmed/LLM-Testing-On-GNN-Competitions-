@@ -1,0 +1,25 @@
+attempt=1
+returncode=1
+elapsed_sec=4.23
+
+STDOUT:
+Loading data...
+  Loaded DGL-free format (rebuilt graph at runtime)
+
+
+STDERR:
+Traceback (most recent call last):
+  File "C:\Users\Tuga\Desktop\LLM test\C11_PARK_GNN\gnn-parkinsons-challenge\solution.py", line 116, in <module>
+    main()
+  File "C:\Users\Tuga\Desktop\LLM test\C11_PARK_GNN\gnn-parkinsons-challenge\solution.py", line 102, in main
+    train_model(model, g, features, labels, train_mask, val_mask)
+  File "C:\Users\Tuga\Desktop\LLM test\C11_PARK_GNN\gnn-parkinsons-challenge\solution.py", line 60, in train_model
+    loss = criterion(logits[train_mask], labels[train_mask].float().unsqueeze(1))
+  File "C:\Users\Tuga\Desktop\gnn_paper\1 gnn-challenge - Mubaraq\7 gnn parkinsosn challenge\.venv_legacy\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\Tuga\Desktop\gnn_paper\1 gnn-challenge - Mubaraq\7 gnn parkinsosn challenge\.venv_legacy\lib\site-packages\torch\nn\modules\loss.py", line 720, in forward
+    return F.binary_cross_entropy_with_logits(input, target,
+  File "C:\Users\Tuga\Desktop\gnn_paper\1 gnn-challenge - Mubaraq\7 gnn parkinsosn challenge\.venv_legacy\lib\site-packages\torch\nn\functional.py", line 3163, in binary_cross_entropy_with_logits
+    raise ValueError("Target size ({}) must be the same as input size ({})".format(target.size(), input.size()))
+ValueError: Target size (torch.Size([126, 1])) must be the same as input size (torch.Size([126, 1, 1]))
+

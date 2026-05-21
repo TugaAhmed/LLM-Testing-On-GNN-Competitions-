@@ -1,0 +1,7 @@
+- Load the dataset and preprocess it to ensure compatibility with the chosen GNN architecture.
+- Define a Graph Attention Network (GAT) model with multiple attention heads for better feature extraction.
+- Implement a training loop with early stopping based on validation macro F1-score to prevent overfitting.
+- Use weighted loss to handle class imbalance in the dataset.
+- Aggregate node embeddings to perform binary classification.
+- Extract predictions for only the test nodes and format them according to the submission requirements.
+- Write the predictions to a CSV file named `submission.csv`.

@@ -1,0 +1,14 @@
+attempt=2
+returncode=0
+elapsed_sec=7.52
+
+STDOUT:
+Loading data...
+  Loaded DGL-free format (rebuilt graph at runtime)
+Epoch 0, Train Loss: 0.9632, Val F1: 0.8679
+Early stopping at epoch 50
+Submission file generated successfully.
+
+
+STDERR:
+

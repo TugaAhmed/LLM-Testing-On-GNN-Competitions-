@@ -1,0 +1,8 @@
+- Import the `random` module to fix the `NameError`.
+- Ensure the dataset is loaded correctly and the paths are accurate.
+- Define a Graph Attention Network (GAT) model with multiple attention heads.
+- Implement a training loop with early stopping based on validation macro F1-score.
+- Use weighted loss to handle class imbalance.
+- Aggregate node embeddings for binary classification.
+- Extract predictions for only the test nodes and format them correctly.
+- Write the predictions to a CSV file named `submission.csv`.

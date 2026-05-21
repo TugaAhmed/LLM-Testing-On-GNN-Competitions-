@@ -1,0 +1,129 @@
+<plan>
+- Load the dataset and preprocess it to ensure compatibility with the chosen GNN architecture.
+- Define a Graph Attention Network (GAT) model with multiple attention heads for better feature extraction.
+- Implement a training loop with early stopping based on validation macro F1-score to prevent overfitting.
+- Use weighted loss to handle class imbalance in the dataset.
+- Aggregate node embeddings to perform binary classification.
+- Extract predictions for only the test nodes and format them according to the submission requirements.
+- Write the predictions to a CSV file named `submission.csv`.
+</plan>
+
+<code>
+```python
+import numpy as np
+import torch
+import torch.nn as nn
+import torch.nn.functional as F
+import dgl
+import pickle
+import pandas as pd
+from sklearn.metrics import f1_score
+from dgl.nn import GATConv
+from torchmetrics.classification import BinaryF1Score
+
+# Set seeds for reproducibility
+torch.manual_seed(42)
+np.random.seed(42)
+random.seed(42)
+
+def load_data():
+    print("Loading data...")
+    with open('./data/public/train_graph_free.pkl', 'rb') as f:
+        train_data = pickle.load(f)
+    with open('./data/public/test_graph_free.pkl', 'rb') as f:
+        test_data = pickle.load(f)
+
+    def rebuild_dgl_graph(d):
+        src, dst = d["edge_index"]
+        g = dgl.graph((src, dst), num_nodes=d["features"].shape[0])
+        d["graph"] = g
+        return d
+
+    train_data = rebuild_dgl_graph(train_data)
+    test_data  = rebuild_dgl_graph(test_data)
+    print("  Loaded DGL-free format (rebuilt graph at runtime)")
+    return train_data, test_data
+
+class GAT(nn.Module):
+    def __init__(self, in_feats, h_feats, num_heads, num_classes):
+        super(GAT, self).__init__()
+        self.conv1 = GATConv(in_feats, h_feats, num_heads=num_heads, activation=F.elu)
+        self.conv2 = GATConv(h_feats * num_heads, num_classes, num_heads=1, activation=None)
+
+    def forward(self, g, in_feat):
+        h = self.conv1(g, in_feat)
+        h = h.view(h.size(0), -1)  # flatten
+        h = F.dropout(h, p=0.5, training=self.training)
+        h = self.conv2(g, h)
+        return h
+
+def train_model(model, g, features, labels, train_mask, val_mask, num_epochs=1000, patience=50):
+    optimizer = torch.optim.Adam(model.parameters(), lr=0.005, weight_decay=5e-4)
+    criterion = nn.BCEWithLogitsLoss(pos_weight=torch.tensor([1.5]))  # Adjust pos_weight for class imbalance
+
+    best_val_f1 = 0
+    epochs_no_improve = 0
+    binary_f1 = BinaryF1Score()
+
+    for epoch in range(num_epochs):
+        model.train()
+        logits = model(g, features.float())
+        loss = criterion(logits[train_mask], labels[train_mask].float().unsqueeze(1))
+
+        optimizer.zero_grad()
+        loss.backward()
+        optimizer.step()
+
+        model.eval()
+        with torch.no_grad():
+            val_logits = model(g, features.float())
+            val_preds = (torch.sigmoid(val_logits[val_mask]) > 0.5).int().squeeze()
+            val_f1 = binary_f1(val_preds, labels[val_mask]).item()
+
+        if val_f1 > best_val_f1:
+            best_val_f1 = val_f1
+            epochs_no_improve = 0
+            torch.save(model.state_dict(), './starter_code/best_gat_model.pt')
+        else:
+            epochs_no_improve += 1
+
+        if epochs_no_improve == patience:
+            print(f"Early stopping at epoch {epoch}")
+            break
+
+        if epoch % 100 == 0:
+            print(f"Epoch {epoch}, Train Loss: {loss.item():.4f}, Val F1: {val_f1:.4f}")
+
+def main():
+    train_data, test_data = load_data()
+
+    g = train_data['graph']
+    features = train_data['features']
+    labels = train_data['labels']
+    train_mask = train_data['train_mask']
+    val_mask = train_data['val_mask']
+    test_node_ids = test_data['node_ids']
+
+    in_feats = features.shape[1]
+    h_feats = 64
+    num_heads = 8
+    num_classes = 1
+
+    model = GAT(in_feats, h_feats, num_heads, num_classes)
+    train_model(model, g, features, labels, train_mask, val_mask)
+
+    model.load_state_dict(torch.load('./starter_code/best_gat_model.pt'))
+    model.eval()
+
+    with torch.no_grad():
+        logits = model(g, features.float())
+        test_preds = (torch.sigmoid(logits[test_node_ids]) > 0.5).int().squeeze().numpy()
+
+    submission_df = pd.DataFrame({'node_id': test_node_ids, 'prediction': test_preds})
+    submission_df.to_csv('./submissions/submission.csv', index=False)
+    print("Submission file generated successfully.")
+
+if __name__ == "__main__":
+    main()
+```
+</code>
