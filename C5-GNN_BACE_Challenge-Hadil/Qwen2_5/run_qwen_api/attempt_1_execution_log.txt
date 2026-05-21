@@ -1,0 +1,14 @@
+attempt=1
+returncode=1
+elapsed_sec=9.21
+
+STDOUT:
+
+
+STDERR:
+Traceback (most recent call last):
+  File "C:\Users\Tuga\Desktop\LLM test\GNN_BACE_Challenge-Hadil\GNN_BACE_Challenge\solution.py", line 77, in <module>
+    class GNNModel(nn.Module):
+                   ^^
+NameError: name 'nn' is not defined. Did you mean: 'np'?
+

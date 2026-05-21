@@ -1,0 +1,32 @@
+attempt=0
+returncode=1
+elapsed_sec=11.26
+
+STDOUT:
+
+
+STDERR:
+Traceback (most recent call last):
+  File "C:\Users\Tuga\Desktop\LLM test\GNN_BACE_Challenge-Hadil\GNN_BACE_Challenge\solution.py", line 59, in <module>
+    all_train_graphs = load_graphs_from_csv(
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tuga\Desktop\LLM test\GNN_BACE_Challenge-Hadil\GNN_BACE_Challenge\solution.py", line 22, in load_graphs_from_csv
+    nodes_df = pd.read_csv(nodes_path)
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tuga\Desktop\LLM test\venv1\Lib\site-packages\pandas\io\parsers\readers.py", line 873, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tuga\Desktop\LLM test\venv1\Lib\site-packages\pandas\io\parsers\readers.py", line 300, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tuga\Desktop\LLM test\venv1\Lib\site-packages\pandas\io\parsers\readers.py", line 1645, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tuga\Desktop\LLM test\venv1\Lib\site-packages\pandas\io\parsers\readers.py", line 1904, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "C:\Users\Tuga\Desktop\LLM test\venv1\Lib\site-packages\pandas\io\common.py", line 926, in get_handle
+    handle = open(
+             ^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '../data/public/train_nodes.csv'
+

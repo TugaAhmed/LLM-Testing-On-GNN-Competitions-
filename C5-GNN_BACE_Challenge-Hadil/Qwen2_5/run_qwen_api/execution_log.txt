@@ -1,0 +1,22 @@
+attempt=2
+returncode=0
+elapsed_sec=11.39
+
+STDOUT:
+Epoch 001, Val Macro F1: 0.4819
+Epoch 002, Val Macro F1: 0.4819
+Epoch 003, Val Macro F1: 0.4819
+Epoch 004, Val Macro F1: 0.4819
+Epoch 005, Val Macro F1: 0.4819
+Epoch 006, Val Macro F1: 0.4819
+Epoch 007, Val Macro F1: 0.4819
+Epoch 008, Val Macro F1: 0.4819
+Epoch 009, Val Macro F1: 0.4819
+Epoch 010, Val Macro F1: 0.4819
+Epoch 011, Val Macro F1: 0.4819
+Early stopping!
+Submission file generated successfully.
+
+
+STDERR:
+

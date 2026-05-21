@@ -1,0 +1,9 @@
+- Correct the file paths to ensure they are relative to the repository root.
+- Ensure all necessary imports are included.
+- Load and preprocess the training and test data from CSV files.
+- Define a GNN model using PyTorch Geometric, incorporating multiple layers for better feature extraction.
+- Implement a training loop with early stopping based on validation performance.
+- Use the Macro F1-Score as the evaluation metric during training.
+- Generate predictions for the test set and convert probabilities to binary classes.
+- Write the predictions to a `submission.csv` file in the required format.
+- Ensure reproducibility by setting random seeds for numpy, torch, and random.
