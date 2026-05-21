@@ -1,0 +1,31 @@
+attempt=1
+returncode=1
+elapsed_sec=7.91
+
+STDOUT:
+
+
+STDERR:
+C:\Users\Tuga\Desktop\LLM test\C8- Liarr_nodes_Noor\Challenge\solution.py:32: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\utils\tensor_numpy.cpp:209.)
+  x[train["cell_type"].values] = torch.tensor(train.iloc[:, 1:-1].values.copy(), dtype=torch.float32)
+Traceback (most recent call last):
+  File "C:\Users\Tuga\Desktop\LLM test\C8- Liarr_nodes_Noor\Challenge\solution.py", line 117, in <module>
+    loss = train()
+           ^^^^^^^
+  File "C:\Users\Tuga\Desktop\LLM test\C8- Liarr_nodes_Noor\Challenge\solution.py", line 93, in train
+    loss = criterion(out, batch.y)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tuga\Desktop\LLM test\venv1\Lib\site-packages\torch\nn\modules\module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tuga\Desktop\LLM test\venv1\Lib\site-packages\torch\nn\modules\module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tuga\Desktop\LLM test\venv1\Lib\site-packages\torch\nn\modules\loss.py", line 251, in forward
+    return F.nll_loss(
+           ^^^^^^^^^^^
+  File "C:\Users\Tuga\Desktop\LLM test\venv1\Lib\site-packages\torch\nn\functional.py", line 3158, in nll_loss
+    return torch._C._nn.nll_loss_nd(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: Target -1 is out of bounds.
+

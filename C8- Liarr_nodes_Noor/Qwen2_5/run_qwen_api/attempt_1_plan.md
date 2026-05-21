@@ -1,0 +1,8 @@
+- Load and preprocess the data from the provided CSV and NPZ files.
+- Create a PyTorch Geometric Data object with the node features, edge indices, and edge weights.
+- Split the training data into training and validation sets.
+- Define a GNN model that incorporates attention mechanisms to weigh the importance of node features and neighborhood information.
+- Train the model using the training set and validate it using the validation set.
+- Use the trained model to generate predictions for the test set.
+- Write the predictions to a submission file in the required format.
+- Address the specific errors encountered in the previous script.
