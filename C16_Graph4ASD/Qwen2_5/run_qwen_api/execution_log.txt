@@ -1,0 +1,32 @@
+attempt=0
+returncode=0
+elapsed_sec=470.59
+
+STDOUT:
+Success! Encrypted to 'submission.csv.enc' (Hybrid Mode).
+Epoch 001, Loss: 0.6947, Val Macro F1: 0.3446
+Epoch 002, Loss: 0.6928, Val Macro F1: 0.3446
+Epoch 003, Loss: 0.6928, Val Macro F1: 0.3446
+Epoch 004, Loss: 0.6926, Val Macro F1: 0.3446
+Epoch 005, Loss: 0.6929, Val Macro F1: 0.5337
+Epoch 006, Loss: 0.6935, Val Macro F1: 0.3217
+Epoch 007, Loss: 0.6932, Val Macro F1: 0.3446
+Epoch 008, Loss: 0.6929, Val Macro F1: 0.3446
+Epoch 009, Loss: 0.6927, Val Macro F1: 0.3446
+Epoch 010, Loss: 0.6930, Val Macro F1: 0.3380
+Epoch 011, Loss: 0.6927, Val Macro F1: 0.3446
+Epoch 012, Loss: 0.6922, Val Macro F1: 0.3446
+Epoch 013, Loss: 0.6919, Val Macro F1: 0.3446
+Epoch 014, Loss: 0.6921, Val Macro F1: 0.3682
+Epoch 015, Loss: 0.6918, Val Macro F1: 0.3682
+Early stopping triggered.
+
+
+STDERR:
+C:\Users\Tuga\Desktop\LLM test\C16_Graph4ASD\Graph4ASD-Challenge\solution.py:33: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\utils\tensor_new.cpp:257.)
+  edge_index = torch.tensor([src, dst], dtype=torch.long)
+C:\Users\Tuga\Desktop\LLM test\venv1\Lib\site-packages\torch_geometric\deprecation.py:26: UserWarning: 'data.DataLoader' is deprecated, use 'loader.DataLoader' instead
+  warnings.warn(out)
+C:\Users\Tuga\Desktop\LLM test\venv1\Lib\site-packages\torch_geometric\deprecation.py:26: UserWarning: 'data.DataLoader' is deprecated, use 'loader.DataLoader' instead
+  warnings.warn(out)
+

@@ -1,0 +1,8 @@
+- Load and preprocess the dataset, converting adjacency matrices and node features into PyTorch Geometric Data objects.
+- Split the training data into training and validation sets.
+- Define a Graph Neural Network (GNN) model using `torch_geometric`.
+- Implement a training loop with early stopping based on validation performance.
+- Evaluate the model on the validation set to tune hyperparameters.
+- Generate predictions for the test set.
+- Write the predictions to a `submission.csv` file in the required format.
+- Encrypt the `submission.csv` file using the provided `encrypt.py` script.

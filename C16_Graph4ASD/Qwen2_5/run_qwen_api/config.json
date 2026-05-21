@@ -1,0 +1,12 @@
+{
+  "mode": "api_only",
+  "provider": "nscale",
+  "model": "Qwen/Qwen2.5-Coder-32B-Instruct",
+  "temperature": 0,
+  "top_p": 0.99,
+  "max_output_tokens": 4000,
+  "repair_limit": 5,
+  "timeout_sec": 3600,
+  "prompt_path": "C:\\Users\\Tuga\\Desktop\\LLM test\\C16_Graph4ASD\\Qwen2_5\\prompt_filled.md",
+  "competition_DIR": "C:\\Users\\Tuga\\Desktop\\LLM test\\C16_Graph4ASD\\Graph4ASD-Challenge"
+}
