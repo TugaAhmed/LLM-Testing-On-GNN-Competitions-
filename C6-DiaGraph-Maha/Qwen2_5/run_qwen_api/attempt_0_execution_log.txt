@@ -1,0 +1,39 @@
+attempt=0
+returncode=0
+elapsed_sec=44.59
+
+STDOUT:
+Encrypted submission written to: submission.csv.enc
+Epoch 001, Loss: 0.7359, Train Acc: 0.7790, Train F1: 0.4789, Val Acc: 0.8081, Val F1: 0.4704
+Epoch 002, Loss: 0.5794, Train Acc: 0.8724, Train F1: 0.4821, Val Acc: 0.9136, Val F1: 0.4970
+Epoch 003, Loss: 0.4699, Train Acc: 0.8725, Train F1: 0.4831, Val Acc: 0.9133, Val F1: 0.4947
+Epoch 004, Loss: 0.3997, Train Acc: 0.8743, Train F1: 0.4971, Val Acc: 0.9149, Val F1: 0.5119
+Epoch 005, Loss: 0.3576, Train Acc: 0.8785, Train F1: 0.5287, Val Acc: 0.9192, Val F1: 0.5560
+Epoch 006, Loss: 0.3332, Train Acc: 0.8843, Train F1: 0.5702, Val Acc: 0.9251, Val F1: 0.6114
+Epoch 007, Loss: 0.3196, Train Acc: 0.8921, Train F1: 0.6217, Val Acc: 0.9348, Val F1: 0.6911
+Epoch 008, Loss: 0.3117, Train Acc: 0.8993, Train F1: 0.6679, Val Acc: 0.9429, Val F1: 0.7520
+Epoch 009, Loss: 0.3064, Train Acc: 0.9037, Train F1: 0.7009, Val Acc: 0.9481, Val F1: 0.7931
+Epoch 010, Loss: 0.3068, Train Acc: 0.9044, Train F1: 0.7201, Val Acc: 0.9494, Val F1: 0.8123
+Epoch 011, Loss: 0.3097, Train Acc: 0.9022, Train F1: 0.7277, Val Acc: 0.9473, Val F1: 0.8164
+Epoch 012, Loss: 0.3140, Train Acc: 0.9004, Train F1: 0.7323, Val Acc: 0.9478, Val F1: 0.8273
+Epoch 013, Loss: 0.3183, Train Acc: 0.8991, Train F1: 0.7330, Val Acc: 0.9461, Val F1: 0.8256
+Epoch 014, Loss: 0.3222, Train Acc: 0.8990, Train F1: 0.7334, Val Acc: 0.9466, Val F1: 0.8274
+Epoch 015, Loss: 0.3225, Train Acc: 0.9005, Train F1: 0.7343, Val Acc: 0.9478, Val F1: 0.8285
+Epoch 016, Loss: 0.3213, Train Acc: 0.9020, Train F1: 0.7338, Val Acc: 0.9489, Val F1: 0.8292
+Epoch 017, Loss: 0.3189, Train Acc: 0.9038, Train F1: 0.7325, Val Acc: 0.9505, Val F1: 0.8285
+Epoch 018, Loss: 0.3151, Train Acc: 0.9051, Train F1: 0.7292, Val Acc: 0.9504, Val F1: 0.8222
+Epoch 019, Loss: 0.3124, Train Acc: 0.9057, Train F1: 0.7253, Val Acc: 0.9507, Val F1: 0.8198
+Epoch 020, Loss: 0.3092, Train Acc: 0.9067, Train F1: 0.7228, Val Acc: 0.9514, Val F1: 0.8183
+Epoch 021, Loss: 0.3064, Train Acc: 0.9068, Train F1: 0.7199, Val Acc: 0.9519, Val F1: 0.8167
+Epoch 022, Loss: 0.3037, Train Acc: 0.9070, Train F1: 0.7183, Val Acc: 0.9527, Val F1: 0.8169
+Epoch 023, Loss: 0.3004, Train Acc: 0.9073, Train F1: 0.7180, Val Acc: 0.9530, Val F1: 0.8180
+Epoch 024, Loss: 0.2971, Train Acc: 0.9074, Train F1: 0.7184, Val Acc: 0.9537, Val F1: 0.8214
+Epoch 025, Loss: 0.2945, Train Acc: 0.9078, Train F1: 0.7208, Val Acc: 0.9537, Val F1: 0.8224
+Epoch 026, Loss: 0.2918, Train Acc: 0.9082, Train F1: 0.7231, Val Acc: 0.9543, Val F1: 0.8262
+Early stopping triggered.
+
+
+STDERR:
+C:\Users\Tuga\Desktop\LLM test\C6-DiaGraph-Maha\GNN-MVP-Node-Classification-Under-Noise\solution.py:35: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\utils\tensor_new.cpp:257.)
+  edge_index = torch.tensor([src, dst], dtype=torch.long)
+

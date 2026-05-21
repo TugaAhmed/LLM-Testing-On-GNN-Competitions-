@@ -1,0 +1,8 @@
+- Load and preprocess the node features and edges, handling NaN and Inf values.
+- Initialize the graph data object with features, edges, and labels.
+- Define a Graph Neural Network (GNN) model architecture using PyTorch Geometric.
+- Implement a training loop with early stopping based on validation performance.
+- Evaluate the model on the validation set to ensure robustness.
+- Generate predictions for the test set.
+- Write the predictions to a CSV file in the required format.
+- Encrypt the predictions file using the provided encryption script.
