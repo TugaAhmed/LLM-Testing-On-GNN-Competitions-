@@ -1,0 +1,22 @@
+task: multi_target_regression
+targets:
+  - pressure
+  - temperature
+  - speed
+
+metric: normalized_mae
+
+normalization_ranges:
+  pressure: 1496.0  # kPa
+  temperature: 228.0  # °C
+  speed: 90.0  # mm/s
+
+dataset:
+  total_samples: 423
+  train_samples: 303
+  val_samples: 0
+  test_samples: 120
+  min_material_frequency: 5
+
+split_strategy: stratified_group_split_by_doi
+random_seed: 42

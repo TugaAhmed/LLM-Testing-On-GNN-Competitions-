@@ -1,0 +1,29 @@
+attempt=1
+returncode=1
+elapsed_sec=5.46
+
+STDOUT:
+
+
+STDERR:
+C:\Users\Tuga\Desktop\LLM test\venv1\Lib\site-packages\torch_geometric\deprecation.py:26: UserWarning: 'data.DataLoader' is deprecated, use 'loader.DataLoader' instead
+  warnings.warn(out)
+Traceback (most recent call last):
+  File "C:\Users\Tuga\Desktop\LLM test\C17-Mix2print2\gnn-challenge\solution.py", line 138, in <module>
+    main()
+  File "C:\Users\Tuga\Desktop\LLM test\C17-Mix2print2\gnn-challenge\solution.py", line 116, in main
+    train(model, train_loader, val_loader, optimizer, criterion)
+  File "C:\Users\Tuga\Desktop\LLM test\C17-Mix2print2\gnn-challenge\solution.py", line 67, in train
+    out = model(data)
+          ^^^^^^^^^^^
+  File "C:\Users\Tuga\Desktop\LLM test\venv1\Lib\site-packages\torch\nn\modules\module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tuga\Desktop\LLM test\venv1\Lib\site-packages\torch\nn\modules\module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tuga\Desktop\LLM test\C17-Mix2print2\gnn-challenge\solution.py", line 53, in forward
+    x = torch_geometric.nn.global_mean_pool(x, batch)
+        ^^^^^^^^^^^^^^^
+NameError: name 'torch_geometric' is not defined
+

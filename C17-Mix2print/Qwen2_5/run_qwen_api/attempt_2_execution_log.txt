@@ -1,0 +1,37 @@
+attempt=2
+returncode=1
+elapsed_sec=6.18
+
+STDOUT:
+
+
+STDERR:
+C:\Users\Tuga\Desktop\LLM test\venv1\Lib\site-packages\torch_geometric\deprecation.py:26: UserWarning: 'data.DataLoader' is deprecated, use 'loader.DataLoader' instead
+  warnings.warn(out)
+C:\Users\Tuga\Desktop\LLM test\venv1\Lib\site-packages\torch\nn\modules\loss.py:610: UserWarning: Using a target size (torch.Size([96])) that is different to the input size (torch.Size([32, 3])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Traceback (most recent call last):
+  File "C:\Users\Tuga\Desktop\LLM test\C17-Mix2print2\gnn-challenge\solution.py", line 138, in <module>
+    main()
+  File "C:\Users\Tuga\Desktop\LLM test\C17-Mix2print2\gnn-challenge\solution.py", line 116, in main
+    train(model, train_loader, val_loader, optimizer, criterion)
+  File "C:\Users\Tuga\Desktop\LLM test\C17-Mix2print2\gnn-challenge\solution.py", line 68, in train
+    loss = criterion(out, data.y)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tuga\Desktop\LLM test\venv1\Lib\site-packages\torch\nn\modules\module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tuga\Desktop\LLM test\venv1\Lib\site-packages\torch\nn\modules\module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tuga\Desktop\LLM test\venv1\Lib\site-packages\torch\nn\modules\loss.py", line 610, in forward
+    return F.mse_loss(input, target, reduction=self.reduction)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tuga\Desktop\LLM test\venv1\Lib\site-packages\torch\nn\functional.py", line 3884, in mse_loss
+    expanded_input, expanded_target = torch.broadcast_tensors(input, target)
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tuga\Desktop\LLM test\venv1\Lib\site-packages\torch\functional.py", line 77, in broadcast_tensors
+    return _VF.broadcast_tensors(tensors)  # type: ignore[attr-defined]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: The size of tensor a (3) must match the size of tensor b (96) at non-singleton dimension 1
+

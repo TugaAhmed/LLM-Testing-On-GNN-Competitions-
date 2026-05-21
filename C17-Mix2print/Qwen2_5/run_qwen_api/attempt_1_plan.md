@@ -1,0 +1,9 @@
+- Import the `random` module to fix the NameError.
+- Ensure the dataset is loaded correctly.
+- Preprocess the dataset into PyTorch Geometric Data objects.
+- Split the training data into training and validation sets.
+- Define a Graph Neural Network (GNN) model architecture using GCN layers.
+- Implement a training loop with early stopping based on validation loss.
+- Evaluate the model on the validation set to tune hyperparameters.
+- Generate predictions for the test set.
+- Write the predictions to a CSV file named `submission.csv` in the required format.

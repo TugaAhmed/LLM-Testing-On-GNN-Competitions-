@@ -1,0 +1,111 @@
+attempt=5
+returncode=0
+elapsed_sec=8.58
+
+STDOUT:
+Epoch 1/100, Train Loss: 47569.5785, Val Loss: 43089.3826
+Epoch 2/100, Train Loss: 46618.6728, Val Loss: 42143.7953
+Epoch 3/100, Train Loss: 45496.3433, Val Loss: 40972.6002
+Epoch 4/100, Train Loss: 44009.7853, Val Loss: 39559.5414
+Epoch 5/100, Train Loss: 42356.5906, Val Loss: 37729.8786
+Epoch 6/100, Train Loss: 40162.2098, Val Loss: 35458.8814
+Epoch 7/100, Train Loss: 37560.8744, Val Loss: 32709.1218
+Epoch 8/100, Train Loss: 34327.5509, Val Loss: 29615.8911
+Epoch 9/100, Train Loss: 30766.7698, Val Loss: 26203.2159
+Epoch 10/100, Train Loss: 27013.9944, Val Loss: 22757.7247
+Epoch 11/100, Train Loss: 23454.5532, Val Loss: 19628.1944
+Epoch 12/100, Train Loss: 20317.2732, Val Loss: 17055.2464
+Epoch 13/100, Train Loss: 17937.8426, Val Loss: 15230.1533
+Epoch 14/100, Train Loss: 16294.5975, Val Loss: 14249.1389
+Epoch 15/100, Train Loss: 15584.2005, Val Loss: 13817.8923
+Epoch 16/100, Train Loss: 15234.5326, Val Loss: 13725.5353
+Epoch 17/100, Train Loss: 15209.9459, Val Loss: 13702.4348
+Epoch 18/100, Train Loss: 15231.9136, Val Loss: 13686.7438
+Epoch 19/100, Train Loss: 15186.3338, Val Loss: 13636.3381
+Epoch 20/100, Train Loss: 15144.1752, Val Loss: 13596.6176
+Epoch 21/100, Train Loss: 15112.3734, Val Loss: 13574.8911
+Epoch 22/100, Train Loss: 15086.1883, Val Loss: 13587.2332
+Epoch 23/100, Train Loss: 15068.1774, Val Loss: 13551.8954
+Epoch 24/100, Train Loss: 15019.1623, Val Loss: 13466.9399
+Epoch 25/100, Train Loss: 14986.2984, Val Loss: 13424.9665
+Epoch 26/100, Train Loss: 14950.4830, Val Loss: 13406.6612
+Epoch 27/100, Train Loss: 14914.7152, Val Loss: 13376.1662
+Epoch 28/100, Train Loss: 14883.1517, Val Loss: 13337.2836
+Epoch 29/100, Train Loss: 14839.2682, Val Loss: 13306.2391
+Epoch 30/100, Train Loss: 14815.7510, Val Loss: 13281.8865
+Epoch 31/100, Train Loss: 14788.3089, Val Loss: 13220.8900
+Epoch 32/100, Train Loss: 14730.8234, Val Loss: 13178.3564
+Epoch 33/100, Train Loss: 14705.8782, Val Loss: 13160.3483
+Epoch 34/100, Train Loss: 14656.7971, Val Loss: 13116.0887
+Epoch 35/100, Train Loss: 14618.3745, Val Loss: 13071.3691
+Epoch 36/100, Train Loss: 14564.6546, Val Loss: 13019.6206
+Epoch 37/100, Train Loss: 14528.6976, Val Loss: 12974.9209
+Epoch 38/100, Train Loss: 14573.7507, Val Loss: 12979.6315
+Epoch 39/100, Train Loss: 14426.7651, Val Loss: 12886.7293
+Epoch 40/100, Train Loss: 14384.5125, Val Loss: 12837.7400
+Epoch 41/100, Train Loss: 14339.8748, Val Loss: 12804.7177
+Epoch 42/100, Train Loss: 14330.6584, Val Loss: 12746.4434
+Epoch 43/100, Train Loss: 14289.8540, Val Loss: 12791.3699
+Epoch 44/100, Train Loss: 14241.2752, Val Loss: 12695.4576
+Epoch 45/100, Train Loss: 14167.1484, Val Loss: 12618.8631
+Epoch 46/100, Train Loss: 14106.8024, Val Loss: 12554.8837
+Epoch 47/100, Train Loss: 14044.0518, Val Loss: 12532.8577
+Epoch 48/100, Train Loss: 14008.2383, Val Loss: 12450.7931
+Epoch 49/100, Train Loss: 13940.8462, Val Loss: 12426.0465
+Epoch 50/100, Train Loss: 13872.6241, Val Loss: 12368.0407
+Epoch 51/100, Train Loss: 13830.9084, Val Loss: 12301.6823
+Epoch 52/100, Train Loss: 13778.9988, Val Loss: 12235.9748
+Epoch 53/100, Train Loss: 13714.8802, Val Loss: 12187.6186
+Epoch 54/100, Train Loss: 13649.8499, Val Loss: 12134.1472
+Epoch 55/100, Train Loss: 13624.4997, Val Loss: 12062.6673
+Epoch 56/100, Train Loss: 13542.9609, Val Loss: 12028.6990
+Epoch 57/100, Train Loss: 13492.4246, Val Loss: 11980.6412
+Epoch 58/100, Train Loss: 13432.9887, Val Loss: 11915.6195
+Epoch 59/100, Train Loss: 13394.1591, Val Loss: 11857.7583
+Epoch 60/100, Train Loss: 13325.8106, Val Loss: 11810.6053
+Epoch 61/100, Train Loss: 13280.3018, Val Loss: 11759.6181
+Epoch 62/100, Train Loss: 13219.0179, Val Loss: 11709.3390
+Epoch 63/100, Train Loss: 13173.7270, Val Loss: 11640.4009
+Epoch 64/100, Train Loss: 13116.6063, Val Loss: 11610.7835
+Epoch 65/100, Train Loss: 13048.6162, Val Loss: 11546.9958
+Epoch 66/100, Train Loss: 12999.6112, Val Loss: 11486.2086
+Epoch 67/100, Train Loss: 12949.4653, Val Loss: 11439.7783
+Epoch 68/100, Train Loss: 12948.0205, Val Loss: 11416.8111
+Epoch 69/100, Train Loss: 12865.7365, Val Loss: 11351.5300
+Epoch 70/100, Train Loss: 12836.6171, Val Loss: 11293.3102
+Epoch 71/100, Train Loss: 12795.1937, Val Loss: 11296.2997
+Epoch 72/100, Train Loss: 12710.1595, Val Loss: 11201.4078
+Epoch 73/100, Train Loss: 12653.0444, Val Loss: 11156.3673
+Epoch 74/100, Train Loss: 12611.6584, Val Loss: 11138.5414
+Epoch 75/100, Train Loss: 12557.4609, Val Loss: 11074.2471
+Epoch 76/100, Train Loss: 12543.4293, Val Loss: 11021.9885
+Epoch 77/100, Train Loss: 12488.1069, Val Loss: 10999.5031
+Epoch 78/100, Train Loss: 12437.2321, Val Loss: 10969.1562
+Epoch 79/100, Train Loss: 12396.2299, Val Loss: 10922.6702
+Epoch 80/100, Train Loss: 12382.3545, Val Loss: 10877.3360
+Epoch 81/100, Train Loss: 12341.3216, Val Loss: 10885.4599
+Epoch 82/100, Train Loss: 12290.0657, Val Loss: 10828.7987
+Epoch 83/100, Train Loss: 12279.3940, Val Loss: 10777.9284
+Epoch 84/100, Train Loss: 12297.5457, Val Loss: 10800.8534
+Epoch 85/100, Train Loss: 12191.4180, Val Loss: 10733.4030
+Epoch 86/100, Train Loss: 12142.0726, Val Loss: 10714.5317
+Epoch 87/100, Train Loss: 12147.2420, Val Loss: 10689.0626
+Epoch 88/100, Train Loss: 12087.7472, Val Loss: 10631.4329
+Epoch 89/100, Train Loss: 12060.8111, Val Loss: 10594.7608
+Epoch 90/100, Train Loss: 12029.4805, Val Loss: 10590.9006
+Epoch 91/100, Train Loss: 12013.4109, Val Loss: 10573.0896
+Epoch 92/100, Train Loss: 11975.5813, Val Loss: 10536.7735
+Epoch 93/100, Train Loss: 11965.1853, Val Loss: 10505.7592
+Epoch 94/100, Train Loss: 11952.2914, Val Loss: 10525.8881
+Epoch 95/100, Train Loss: 11889.2483, Val Loss: 10475.7773
+Epoch 96/100, Train Loss: 11890.4974, Val Loss: 10447.0592
+Epoch 97/100, Train Loss: 11849.4168, Val Loss: 10419.9408
+Epoch 98/100, Train Loss: 11824.8865, Val Loss: 10394.2080
+Epoch 99/100, Train Loss: 11806.6940, Val Loss: 10407.3033
+Epoch 100/100, Train Loss: 11776.0919, Val Loss: 10384.9343
+
+
+STDERR:
+C:\Users\Tuga\Desktop\LLM test\venv1\Lib\site-packages\torch_geometric\deprecation.py:26: UserWarning: 'data.DataLoader' is deprecated, use 'loader.DataLoader' instead
+  warnings.warn(out)
+

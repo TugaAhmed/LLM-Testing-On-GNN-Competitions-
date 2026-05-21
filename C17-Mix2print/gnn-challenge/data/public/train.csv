@@ -1,0 +1,304 @@
+id,DOI,Components,Needle,Cells (e6/ml),Additional notes,pressure,temperature,speed
+0,https://10.1021/acsbiomaterials.6b00031,Gelatin Methacrylated [5 wt%] ,400 µm Cylindrical,Placenta BeWo Cells (10),fibronectin added,50.0,23.0,10.0
+1,https://10.1021/acsbiomaterials.6b00031,Gelatin Methacrylated [10 wt%] ,400 µm Cylindrical,Placenta BeWo Cells (10),fibronectin added,70.0,28.0,10.0
+2,https://10.1002/bit.26850,Gelatin Methacrylated [10 wt%] ,400 µm Cylindrical,Primary Human Umbilical Vein Endothelial Cells (10),fibronectin added,50.0,23.0,10.0
+3,https://10.1002/jbm.a.36350,Gelatin Methacrylated [10 wt%] ,400 µm Cylindrical,Placenta BeWo Cells (2),"fibronectin, placental dECM added",50.0,23.0,10.0
+7,https://10.1089/ten.tec.2019.0112,PCL [100 wt%] ,22 Gauge Cylindrical, ,PCL molecular weight = 50 kDa,450.0,160.0,1.3
+8,https://10.1089/ten.tec.2019.0112,PCL [100 wt%] ,24 Gauge Cylindrical, ,PCL molecular weight = 50 kDa,500.0,160.0,12.0
+9,https://10.1089/ten.tec.2019.0112,PCL [100 wt%] ,27 Gauge Cylindrical, ,PCL molecular weight = 50 kDa,550.0,160.0,1.0
+10,https://10.1089/ten.tec.2019.0112,PCL [85 wt%] Hydroxyapatite [15 wt%] ,22 Gauge Cylindrical, ,PCL molecular weight = 50 kDa,450.0,160.0,1.2
+11,https://10.1089/ten.tec.2019.0112,PCL [85 wt%] Hydroxyapatite [15 wt%] ,24 Gauge Cylindrical, ,PCL molecular weight = 50 kDa,500.0,160.0,0.5
+12,https://10.1089/ten.tec.2019.0112,PCL [85 wt%] Hydroxyapatite [15 wt%] ,27 Gauge Cylindrical, ,PCL molecular weight = 50 kDa,550.0,160.0,0.8
+13,https://10.1089/ten.tec.2019.0112,PCL [70 wt%] Hydroxyapatite [30 wt%] ,22 Gauge Cylindrical, ,PCL molecular weight = 50 kDa,500.0,160.0,1.0
+14,https://10.1089/ten.tec.2019.0112,PCL [70 wt%] Hydroxyapatite [30 wt%] ,24 Gauge Cylindrical, ,PCL molecular weight = 50 kDa,550.0,160.0,0.8
+15,https://10.1089/ten.tec.2019.0112,PCL [70 wt%] Hydroxyapatite [30 wt%] ,27 Gauge Cylindrical, ,PCL molecular weight = 50 kDa,650.0,160.0,0.5
+16,https://10.1016/j.actbio.2019.03.041,PCL [100 wt%] ,22 Gauge Cylindrical, ,PCL molecular weight = 50 kDa,500.0,160.0,1.2
+17,https://10.1016/j.actbio.2019.03.041,PCL [85 wt%] Hydroxyapatite [15 wt%] ,22 Gauge Cylindrical, ,PCL molecular weight = 50 kDa,500.0,160.0,0.9
+18,https://10.1016/j.actbio.2019.03.041,PCL [70 wt%] Hydroxyapatite [30 wt%] ,22 Gauge Cylindrical, ,PCL molecular weight = 50 kDa,550.0,160.0,0.8
+19,https://10.1089/ten.tec.2018.0307,PCL [100 wt%] ,22 Gauge Cylindrical, ,PCL molecular weight = 50 kDa,500.0,160.0,1.2
+20,https://10.1089/ten.tec.2018.0307,PCL [70 wt%] Hydroxyapatite [30 wt%] ,22 Gauge Cylindrical, ,PCL molecular weight = 50 kDa,570.0,160.0,0.5
+21,https://10.1089/ten.tec.2018.0307,PCL [70 wt%] Beta Tricalcium Phosphate [30 wt%] ,22 Gauge Cylindrical, ,PCL molecular weight = 50 kDa,550.0,160.0,0.8
+22,https://10.1089/ten.tec.2018.0307,PCL [70 wt%] Hydroxyapatite [15 wt%] Beta Tricalcium Phosphate [15 wt%] ,22 Gauge Cylindrical, ,PCL molecular weight = 50 kDa,570.0,160.0,0.7
+23,https://10.1088/1758-5090/aa6370,PLGA [100 wt%] ,200 µm Cylindrical, ,"LA:GA = 50:50, 9.73 kDa, ester endcap",900.0,110.0,1.5
+24,https://10.1088/1758-5090/aa6370,PLGA [100 wt%] ,200 µm Cylindrical, ,"LA:GA = 50:50, 30.3 kDa, ester endcap",900.0,135.0,0.7
+25,https://10.1088/1758-5090/aa6370,PLGA [100 wt%] ,200 µm Cylindrical, ,"LA:GA = 60:40, 42.6 kDa, ester endcap",900.0,165.0,0.7
+26,https://10.1088/1758-5090/aa6370,PLGA [100 wt%] ,200 µm Cylindrical, ,"LA:GA = 60:40, 33.8 kDa, Acid cap",900.0,150.0,1.5
+27,https://10.1088/1758-5090/aa6370,PLGA [100 wt%] ,200 µm Cylindrical, ,"LA:GA = 85:15, 61.9kDa, ester cap",900.0,170.0,0.5
+28,https://10.1088/1758-5090/aa6370,PLGA [100 wt%] ,400 µm Cylindrical, ,"LA:GA = 50:50, 9.73 kDa, ester cap",750.0,95.0,1.5
+29,https://10.1088/1758-5090/aa6370,PLGA [100 wt%] ,400 µm Cylindrical, ,"LA:GA = 50:50, 30.3 kDa, Ester endcap",800.0,125.0,1.5
+30,https://10.1088/1758-5090/aa6370,PLGA [100 wt%] ,400 µm Cylindrical, ,"LA:GA = 60:40, 42.6 kDa, Ester endcap",900.0,140.0,0.5
+31,https://10.1088/1758-5090/aa6370,PLGA [100 wt%] ,400 µm Cylindrical, ,"LA:GA = 60:40, 33.8 kDa, acid endcap",800.0,130.0,1.0
+32,https://10.1088/1758-5090/aa6370,PLGA [100 wt%] ,400 µm Cylindrical, ,"LA:GA = 85:15, 61.9 kDa, ester endcap",800.0,145.0,0.5
+37,https://10.1016/j.actbio.2018.02.007,Fibrinogen [20 mg/mL] Gelatin [30 mg/mL] Hyaluronic Acid [3 mg/mL] Glycerol [10 %] ,200 µm Conical,Primary Neonatal Rat Ventricular Cardiomyocytes (10),,100.0,18.0,1.67
+38,https://10.1016/j.actbio.2018.02.007,PCL [100 wt%] ,300 µm Conical, ,"PCL Mw = 43,000 - 50,000.",750.0,98.0,1.67
+42,https://10.1016/j.bprint.2018.e00028,Hyaluronic Acid [3 mg/mL] Gelatin [30 mg/mL] Fibrinogen [20 mg/mL] Glycerol [10 %] ,300 µm Conical,Human Epidermal Keratinocytes (10),,60.0,18.0,2.0
+43,https://10.1016/j.bprint.2018.e00028,Hyaluronic Acid [3 mg/mL] Gelatin [30 mg/mL] Fibrinogen [20 mg/mL] Glycerol [10 %] ,300 µm Conical,Human Epidermal Fibroblasts (5),,60.0,18.0,2.0
+44,https://10.1002/bit.26514,Hydroxyapatite [60 wt%] Beta Tricalcium Phosphate [40 wt%] ,610 µm Conical, ,,600.0,25.0,1.67
+45,https://10.1016/j.bprint.2020.e00076,Gelatin Methacrylated [7.5 wt%] ,27 Gauge Conical,L929 Fibroblasts (1),"These conditions are compatible with engraving technology. Due to the low viscosity of the ink it might not be possible to be printed without a mold"" (i.e. engraved fiber) or sacrificial material""",40.0,23.0,4.0
+46,https://10.1089/ten.tea.2019.0204,PCL [90 wt%] Hydroxyapatite [10 wt%] ,22 Gauge Cylindrical, ,,520.0,160.0,1.1
+47,https://10.1089/ten.tea.2019.0204,PCL [80 wt%] Hydroxyapatite [10 wt%] Beta Tricalcium Phosphate [10 wt%] ,22 Gauge Cylindrical, ,,600.0,160.0,1.3
+48,https://10.1089/ten.tea.2019.0204,PCL [70 wt%] Hydroxyapatite [10 wt%] Beta Tricalcium Phosphate [20 wt%] ,22 Gauge Cylindrical, ,,620.0,160.0,0.7
+49,https://10.1021/acsbiomaterials.6b00026,Polypropylene fumarate (PPF) [85 wt%] Diethyl fumarate (DEF) [15 wt%] ,250 µm Conical, ,,200.0,55.0,12.5
+50,https://10.1021/acsbiomaterials.6b00026,Polypropylene fumarate (PPF) [90 wt%] Diethyl fumarate (DEF) [10 wt%] ,250 µm Conical, ,,200.0,55.0,7.5
+57,https://10.1021/acsbiomaterials.6b00641,Polypropylene fumarate (PPF) [85 wt%] Diethyl fumarate (DEF) [15 wt%] ,340 µm Conical, ,,80.0,55.0,5.0
+59,https://10.1016/j.bprint.2016.08.003,Cellulose Nanofibrillated [2 wt%] Alginate [0.5 wt%] ,300 µm Cylindrical,Primary Human Nasoseptal Cartilage (20),Constructs were crosslinked with 100mM CaCl2 for 10 minutes.,40.0,23.0,5.0
+60,https://10.1007/s10856-019-6258-2,Pluronic F127 [60 wt%] Collagen [6 wt%] ,337 µm Cylindrical,Primary Rat Bone Marrow-Derived Mesenchymal Stem Cells (10),,50.0,37.0,3.333
+61,https://10.1089/ten.TEC.2020.0053,Gelatin Methacrylated [5 wt%] ,260 µm Cylindrical,Primary Rat Bone Mesenchymal Stem Cells (5),Cooling system implemented for the receiving platform.,300.0,22.0,6.0
+62,https://10.1039/C9BM01271K,Gelatin Methacrylated [4 wt%] Chitosan [4 wt%] ,200 µm Cylindrical, ,"Construct crosslinked with Irgacure 2959 (0.5 wt%, .50mW/cm2) post print",400.0,40.0,8.0
+63,https://10.1039/C9BM01271K,Gelatin Methacrylated [4 wt%] Chitosan [4 wt%] ,150 µm Cylindrical, ,"Construct crosslinked with Irgacure 2959 (0.5 wt%, 50mW/cm2) post print",500.0,40.0,5.0
+64,https://10.1016/j.jmbbm.2017.12.018,Alginate [5 wt%] Gelatin [6 wt%] ,27 Gauge Cylindrical, ,,103.0,37.0,5.0
+65,https://10.1016/j.jmbbm.2017.12.018,Alginate [5 wt%] Gelatin [8 wt%] ,27 Gauge Cylindrical, ,,172.0,37.0,5.0
+66,https://10.1016/j.jmbbm.2017.12.018,Alginate [7 wt%] Gelatin [8 wt%] ,27 Gauge Cylindrical, ,,193.0,37.0,5.0
+67,https://10.1016/j.jmbbm.2017.12.018,Alginate [9 wt%] Gelatin [6 wt%] ,27 Gauge Cylindrical, ,,276.0,37.0,5.0
+68,https://10.1016/j.jmbbm.2017.12.018,Alginate [5 wt%] Gelatin [10 wt%] ,27 Gauge Cylindrical, ,,310.0,37.0,5.0
+69,https://10.1016/j.jmbbm.2017.12.018,Alginate [7 wt%] Gelatin [6 wt%] ,27 Gauge Cylindrical, ,,186.0,37.0,5.0
+70,https://10.1002/adhm.201801631,Alginate [3 wt%] Methylcellulose [9 wt%] ,840 µm Cylindrical, ,Pancreatic Inslets were encapsulated into the scaffold. The constructs were also crosslinked with 70mM SrCl2 for 10 minutes.,40.0,25.0,10.0
+71,https://10.1016/j.jmbbn.2019.06.014,Alginate [2 wt%] ,510 µm Cylindrical,Primary Rabbit Adipose-Dervied Mesenchymal Stem Cells (5),CaSO4 was used at 1 wt% to initially crosslink the hydrogels,30.0,25.0,4.0
+72,https://10.1038/s41598-020-61606-c,Alginate [3 wt%] ,30 Gauge Cylindrical,NIH 3T3 Fibroblasts (1),A pluronic F127 and laponite support bath was used. The bath also contained 1wt% CaCl2 .,50.0,22.0,2.5
+73,https://10.1007/s42242-020-00076-6,Hyaluronic Acid [2 wt%] Alginate [1 wt%] Gelatin [3.75 wt%] ,25 Gauge Cylindrical,Human Glial Cells (1.5),,300.0,37.0,2.3
+74,https://10.1007/s42242-020-00076-6,Hyaluronic Acid [2 wt%] Alginate [1 wt%] Gelatin [7.5 wt%] ,25 Gauge Cylindrical,Human Glial Cells (1.5),,300.0,37.0,2.3
+75,https://10.1002/term.1682,PCL [100 wt%] ,250 µm Cylindrical, ,"PCL MW = 70,000 - 90,000",650.0,80.0,1.333
+76,https://10.1002/term.1682,Alginate [4 wt%] ,250 µm Conical,Primary Human Nasal Septal Cartilage Chondrocyte (1),Alginate was dispensed in the lines between the lines of the PCL layers,9.0,22.0,6.666667
+77,https://10.1002/term.1682,Alginate [6 wt%] ,250 µm Conical,Primary Human Nasal Septal Cartilage Chondrocyte (1),Alginate was dispensed in the lines between the lines of the PCL layers,20.0,22.0,6.666667
+78,https://10.1016/j.bprint.2020.e00076,PCL [100 wt%] ,18 Gauge Cylindrical, ,PCL molecular weight is 50KDa. PCL was engraved and then filled with low-viscosity photocurable inks(GelMA or E-Shell),650.0,140.0,0.5
+79,https://10.1016/j.bprint.2020.e00076,Gelatin Methacrylated [7.5 wt%] ,27 Gauge Conical,L929 Fibroblasts (1),,40.0,24.0,4.0
+80,https://10.1016/j.actbio.2014.02.041,PCL [100 wt%] ,25 Gauge Cylindrical, ,PCL has a 79.1 kDA molecular weight.,500.0,160.0,4.1667
+87,https://10.1016/j.bprint.2019.e00053,Alginate [2 wt%] ,30 Gauge Cylindrical,SK-N-BE(2) Neuroblasts (1),Gelatin support gel was used via the FRESH method,68.9476,25.0,8.0
+88,https://10.1016/j.dental.2019.08.114,Gelatin Methacrylated [12.5 wt%] ,25 Gauge Conical,Primary Human Periodontal Ligament Cells (2),Crosslinking occurred post printing.,120.0,25.0,11.0
+89,https://10.1016/j.dental.2019.08.114,Gelatin Methacrylated [15 wt%] ,25 Gauge Conical, ,,250.0,25.0,9.0
+90,https://10.1016/j.dental.2019.08.114,Gelatin Methacrylated [10 wt%] ,27 Gauge Conical, ,,160.0,25.0,6.5
+91,https://10.1016/j.dental.2019.08.114,Gelatin Methacrylated [12.5 wt%] ,27 Gauge Conical,Primary Human Periodontal Ligament Cells (2),Crosslinking occurred post printing.,230.0,25.0,11.0
+92,https://10.1016/j.dental.2019.08.114,Gelatin Methacrylated [15 wt%] ,27 Gauge Conical, ,,420.0,25.0,9.0
+93,https://10.1038/s41598-018-26407-3,Alginate [8 wt%] Gelatin [20 wt%] ,340 µm Conical,Primary Mouse Epidermal Stem Cells (1),PBS was used as a solvent with an ionic strength of .082 M. Construct crosslinked in 10% CaCl2,200.0,10.0,6.5
+94,https://10.1021/acsbiomaterials.9b00167,Alginate Dialdehyde [6 wt%] Gelatin [2 wt%] ,27 Gauge Conical, ,Printed into a 100mM CaCl2 bath coated with PEI.,47.0,26.0,25.0
+95,https://10.1021/acsbiomaterials.9b00167,Alginate Dialdehyde [3 wt%] Gelatin [2 wt%] ,27 Gauge Conical,RSC96 Neuronal Schwann Cells (1),Printed into a 100mM CaCl2 bath coated with PEI.,12.0,26.0,25.0
+96,https://10.1021/acsbiomaterials.9b00167,Alginate Dialdehyde [2 wt%] Gelatin [2 wt%] ,27 Gauge Conical,RSC96 Neuronal Schwann Cells (1),Printed into a 100mM CaCl2 bath coated with PEI.,10.0,26.0,25.0
+97,https://10.1021/acsbiomaterials.9b00167,Alginate Dialdehyde [2 wt%] Gelatin [3 wt%] ,27 Gauge Conical,RSC96 Neuronal Schwann Cells (1),Printed into a 100mM CaCl2 bath coated with PEI.,30.0,26.0,25.0
+98,https://10.1021/acsbiomaterials.9b00167,Alginate Dialdehyde [2 wt%] Gelatin [6 wt%] ,27 Gauge Conical, ,Printed into a 100mM CaCl2 bath coated with PEI.,215.0,26.0,25.0
+99,https://10.1021/acsbiomaterials.9b00167,Alginate Dialdehyde [3.75 wt%] Gelatin [3.75 wt%] ,27 Gauge Conical, ,Printed into a 100mM CaCl2 bath coated with PEI.,75.0,26.0,25.0
+100,https://10.1088/1758-5090/aa90d7,Alginate [3.5 wt%] ,21 Gauge Conical,Human Chondrocytes (3),.2M CaCl2 was sprayed over the scaffold,100.0,25.0,25.0
+101,https://10.1038/s41598-017-04691-9,Gelatin [7 wt%] Alginate [3 wt%] ,25 Gauge Cylindrical,MDA-MB-231 Epithelial Cells (1),Scaffolds were rinsed with 100mM CaCl2 solution.,200.0,25.0,5.0
+105,https://10.1016/j.matlet.2020.127382,Alginate [7 wt%] Gelatin [4 wt%] ,22 Gauge Conical, ,420mM CaCl2 was used to crosslink the constructs.,110.0,25.0,3.0
+106,https://10.1016/j.matlet.2020.127382,Alginate [7 wt%] Gelatin [4 wt%] ,22 Gauge Conical, ,420mM CaCl2 was used to crosslink the constructs.,138.0,25.0,3.0
+110,https://10.1089/3dp.2018.0175,Gelatin Methacrylated [5 wt%] ,23 Gauge Cylindrical,HEK293 Kidney Cells (5),An agarose support slurry was used,20.68428,25.0,12.0
+111,https://10.3390/pharmaceutics12060550,Alginate [6 wt%] ,20 Gauge Conical, ,Alginate was crosslinked partially before printing.,10.0,37.0,6.0
+112,https://10.3390/app10030768,Alginate [3 wt%] Gelatin [8 wt%] ,400 µm Conical, ,,180.0,37.0,10.0
+113,https://10.1021/acsami.6b11669,Collagen [5 wt%] ,310 µm Cylindrical,MG63 Osteoblast-like Cells (2),Genipin was used to crosslink the collagen post printing.,110.0,10.0,10.0
+114,https://10.1021/acsami.6b11669,Collagen [5 wt%] ,310 µm Cylindrical,Human Adipose-derived Stem Cells (2),Genipin was used to crosslink the collagen post printing.,110.0,10.0,10.0
+115,https://10.1016/j.jmbbm.2018.01.034,Alginate [3 wt%] ,200 µm Conical, ,Alginate was dispensed into 50mM CaCl2,20.0,20.0,6.0
+124,https://10.1089/ten.tec.2015.0307,PCL [100 wt%] ,300 µm Cylindrical, ,"PCL Mw 48,000 -90,000.",800.0,75.0,1.0
+125,https://10.1089/ten.tec.2015.0307,Alginate [2.5 wt%] ,200 µm Conical,Primary Embryonic Chick Chondrocytes (5.68),Each alginate layer was partiallly crosslinked with aerosolized CaCl2 (170mM) during print,10.0,10.0,25.0
+126,https://10.1088/1758-5090/aaf44a,Alginate [2.5 wt%] Hydroxyapatite [2 wt%] ,250 µm Conical,Primary Embryonic Chick Chondrocytes (1.57),"The ink was printed into a crosslinking medium containing 100 mM CaCl2, 0.1% (w/v) PEI. HA was stabilized in bioink using sodium citrate.",30.0,37.0,15.5
+127,https://10.1088/1758-5090/aaf44a,Alginate [2.5 wt%] Hydroxyapatite [1 wt%] ,250 µm Conical,Primary Embryonic Chick Chondrocytes (1.57),"The ink was printed into a crosslinking medium containing 100 mM CaCl2, 0.1% (w/v) PEI. HA was stabilized in bioink using sodium citrate.",30.0,37.0,16.0
+128,https://10.1088/1758-5090/aacd30,Alginate [1 wt%] Hyaluronic Acid [0.5 wt%] Fibrinogen [40 mg/ml] ,200 µm Cylindrical,Primary Rat Schwann Cells (1),Printed in a bath of 20 mM CaCl2 + 10 U/ml thrombin,30.0,22.0,9.0
+129,https://http://ijb.whioce.com/index.php/int-j-bioprinting/article/view/02009,Chitosan [2.5 wt%] Gelatin [5 wt%] ,210 µm Cylindrical, ,A polyelectrolyte complex was formed between the gelatin and chitosan,240.0,27.0,16.667
+131,https://10.1016/j.biomaterials.2013.09.078,Gelatin Methacrylated [10 wt%] ,30 Gauge Cylindrical, ,VA-086 used as photo-initiator with an optimized UV dose of 1800 mJ/cm2,300.0,27.5,7.5
+132,https://10.1016/j.biomaterials.2013.09.078,Gelatin Methacrylated [10 wt%] ,30 Gauge Cylindrical,HEPG2 Liver Cells (1.5),VA-086 used as photo-initiator with an optimized UV dose of 1800 mJ/cm2,300.0,24.5,6.67
+133,https://10.1016/j.biomaterials.2013.09.078,Gelatin Methacrylated [10 wt%] ,27 Gauge Cylindrical,HEPG2 Liver Cells (1.5),VA-086 used as photo-initiator with an optimized UV dose of 1800 mJ/cm2,50.0,24.5,10.0
+134,https://10.1016/j.biomaterials.2013.09.078,Gelatin Methacrylated [15 wt%] ,27 Gauge Cylindrical, ,VA-086 used as photo-initiator with an optimized UV dose of 1800 mJ/cm2,400.0,28.5,9.16
+135,https://10.1016/j.biomaterials.2013.09.078,Gelatin Methacrylated [20 wt%] ,27 Gauge Cylindrical, ,VA-086 used as photo-initiator with an optimized UV dose of 1800 mJ/cm2,400.0,30.0,9.16
+136,https://10.1016/j.actbio.2016.12.008,Fibrinogen [30 mg/ml] Gelatin [35 mg/ml] Hyaluronic Acid [3 mg/ml] ,300 µm Conical,Primary Rabbit Bladder Urothelial Cells (10),The cell-laden hydrogel was printed into a urethra structure. Final crosslinking done with thrombin,60.0,18.0,5.005
+137,https://10.1016/j.actbio.2016.12.008,Fibrinogen [30 mg/ml] Gelatin [35 mg/ml] Hyaluronic Acid [3 mg/ml] ,300 µm Conical,Primary Rabbit Smooth Muscle Cells (10),The cell-laden hydrogel was printed into a urethra structure. Final crosslinking done with thrombin,60.0,18.0,5.005
+138,https://10.1016/j.actbio.2016.12.008,PCL [100 wt%] ,200 µm Cylindrical, ,"PCL Mw 43000-50,000.",760.0,98.0,5.005
+139,https://10.1007/s10544-014-9915-8,Gelatin [5 wt%] ,30 Gauge Cylindrical,Human Umbilical Vein Endothelial Cells (5),Gelatin crosslinked with microbial transglutaminase at 3U/mL,50.0,24.0,5.0
+140,https://10.1007/s10544-014-9915-8,Gelatin [5 wt%] ,30 Gauge Cylindrical,HEK293 Kidney Cells (5),Gelatin crosslinked with microbial transglutaminase at 3U/mL,50.0,24.0,5.0
+141,https://10.1088/0960-1317/22/8/085014,PCL [100 wt%] ,200 µm Cylindrical, ,"PCL MW of 70,000 - 90,000.",400.0,80.0,1.666667
+147,https://10.1002/jbm.b.34602,Chitosan [4.5 wt%] ,22 Gauge Cylindrical,Human Fibroblasts (0.2),,25.0,37.0,10.0
+148,https://10.1002/jbm.b.34602,Chitosan [6 wt%] ,22 Gauge Cylindrical,Human Fibroblasts (0.2),,40.0,37.0,10.0
+149,https://10.1088/1748-605X/ab3c74,Alginate [0.8 wt%] Gelatin [4.1 wt%] Glycerol [10 %] ,27 Gauge Cylindrical,Human Mesenchymal Stem Cells (5),The ink was cooled to 0°C prior to printing. Scaffolds were crosslinked with 2% (w/v) CaCl2 solution for 10 min,40.0,20.0,2.0
+150,https://10.1088/1748-605X/ab3c74,Alginate [1.3 wt%] Gelatin [4.1 wt%] Glycerol [10 %] ,27 Gauge Cylindrical,Human Mesenchymal Stem Cells (5),The ink was cooled to 0°C prior to printing. Scaffolds were crosslinked with 2% (w/v) CaCl2 solution for 10 min,40.0,20.0,2.0
+151,https://10.1088/1748-605X/ab3c74,Alginate [1.8 wt%] Gelatin [4.1 wt%] Glycerol [10 %] ,27 Gauge Cylindrical,Human Mesenchymal Stem Cells (5),The ink was cooled to 0°C prior to printing. Scaffolds were crosslinked with 2% (w/v) CaCl2 solution for 10 min,40.0,20.0,2.0
+152,https://10.1088/1748-605X/ab3c74,Alginate [2.3 wt%] Gelatin [4.1 wt%] Glycerol [10 %] ,27 Gauge Cylindrical,Human Mesenchymal Stem Cells (5),The ink was cooled to 0°C prior to printing. Scaffolds were crosslinked with 2% (w/v) CaCl2 solution for 10 min,40.0,20.0,2.0
+153,https://10.3390/cells8080830,Alginate [6 wt%] Gelatin [4 wt%] ,410 µm Conical,Cell Line SH-SY5Y (0.05),Alginate crosslinked in 2% CaCl2 bath post-print,55.0,25.0,10.0
+154,https://10.3390/cells8080830,Alginate [6 wt%] Gelatin [4 wt%] ,410 µm Conical,Cell Line SH-SY5Y (0.05),Alginate crosslinked in 2% CaCl2 bath post-print,45.0,25.0,10.0
+155,https://10.3390/cells8080830,Alginate [6 wt%] Gelatin [4 wt%] ,410 µm Conical,Human Induced Pluripotent Stem Cells (2),Alginate crosslinked in 2% CaCl2 bath post-print,55.0,25.0,10.0
+156,https://10.3390/cells8080830,Alginate [4 wt%] Gelatin [4 wt%] ,410 µm Conical,Neural Stem Cells iPSC Differentiated (2),Alginate crosslinked in 2% CaCl2 bath post-print,55.0,25.0,10.0
+163,https://10.1016/j.bprint.2017.09.001,Alginate [7 wt%] Gelatin [8 wt%] ,30 Gauge Cylindrical, ,The alginate/gelatin composite was optimized.,100.0,37.0,3.0
+164,https://10.1088/1758-5090/ab56f9,Gelatin [15 wt%] ,25 Gauge Cylindrical, ,Crosslinking occurred post processing.,240.0,35.0,64.0
+166,https://10.1038/s41467-020-16192,Hyaluronic Acid Methacrylated [2 wt%] Gelatin Methacrylated [10 wt%] ,22 Gauge Cylindrical, ,Poly-L-lysine and Heparin were coated on the surface of the 3D printed hydrogel scaffold. Crosslinking occurred post-proecsssing.,80.0,25.0,28.0
+167,https://10.7150/thno.44270,PCL [100 wt%] ,300 µm Cylindrical, ,"PCL Mol Wt = 80,000. PCL was immersed in silk fibroin solution and irradiated with gamma rays.",80.0,130.0,7.0
+168,https://10.1016/j.biomaterials.2020.119838,PCL [100 wt%] ,22 Gauge Cylindrical, ,"PCL MW = 80,000",400.0,180.0,1.0
+169,https://10.1016/j.compscitech.2020.108069,PCL [100 wt%] ,400 µm Cylindrical, ,"PCL MW = 50,000.",600.0,130.0,0.6
+170,https://10.1016/j.compscitech.2020.108069,PCL [90 wt%] Hydroxyapatite [10 wt%] ,400 µm Cylindrical, ,"PCL MW = 50,000",620.0,130.0,0.5
+171,https://10.1016/j.compscitech.2020.108069,PCL [80 wt%] Hydroxyapatite [20 wt%] ,400 µm Cylindrical, ,"PCL MW = 50,000",640.0,140.0,0.5
+173,https://10.1088/2057-1976/ab54a7,Gelatin Methacrylated [10 wt%] Hyaluronic Acid Methacrylated [2 wt%] ,200 µm,Bone Marrow-derived Mesenchymal Stem Cells (1),,400.0,25.0,8.0
+174,https://10.1088/2057-1976/ab54a7,PCL [100 wt%] ,200 µm Cylindrical, ,"PCL MW = 45,000",480.0,165.0,1.4
+175,https://10.1088/2057-1976/ab54a7,PCL [100 wt%] ,300 µm Cylindrical, ,"PCL MW = 45,000",480.0,155.0,3.5
+176,https://10.1088/2057-1976/ab54a7,PCL [100 wt%] ,400 µm Cylindrical, ,"PCL MW = 45,000",480.0,155.0,13.0
+179,https://10.3390/mi11010031,PCL [100 wt%] ,500 µm Cylindrical, ,"PCL MW = 55,000",700.0,80.0,5.0
+180,https://10.2217/3dp-2016-0011,PCL [100 wt%] ,22 Gauge Cylindrical, ,"Average MN 45,000",500.0,110.0,5.0
+181,https://10.3892/mmr.2018.9076,PCL [10 wt%] PLGA [90 wt%] ,27 Gauge Cylindrical, ,"PCL MW = 50,000; PLGA MW = 50,000 - 75,000 with a LA:GA of 50:50",650.0,135.0,1.667
+182,https://10.3892/mmr.2018.9076,PCL [50 wt%] PLGA [50 wt%] ,27 Gauge Cylindrical, ,"PCL MW = 50,000; PLGA MW = 50,000 - 75,000 with a LA:GA of 50:50",650.0,135.0,1.667
+183,https://10.3892/mmr.2018.9076,PCL [90 wt%] PLGA [10 wt%] ,27 Gauge Cylindrical, ,"PCL MW = 50,000; PLGA MW = 50,000 - 75,000 with a LA:GA of 50:50",650.0,135.0,1.667
+184,https://10.3390/ma11061006,PCL [100 wt%] ,, ,PCL consists of blend of PCL10 (10kDa) and PCL80 (80kDa) at a ratio of 40:60,600.0,130.0,2.5
+185,https://10.1016/j.acthis.2018.02.010,PCL [100 wt%] ,700 µm Cylindrical, ,"PCL MN = 50,000",600.0,130.0,2.3
+187,https://10.1002/jbm.b.33994,PCL [90 wt%] Hydroxyapatite [10 wt%] ,22 Gauge Cylindrical, ,"PCL MW = 65,000",300.0,120.0,2.0
+188,https://10.1016/j.bprint.2017.08.001,PCL [100 wt%] ,24 Gauge Cylindrical, ,50-43 kDA PCL,600.0,110.0,1.4
+190,https://10.1039/c7ra04372d,PCL [90 wt%] Hydroxyapatite [10 wt%] ,22 Gauge Cylindrical, ,"PCL MW = 65,000",300.0,120.0,2.0
+192,https://10.1016/j.msec.2017.05.003,PCL [95 wt%] Hydroxyapatite [5 wt%] ,800 µm Cylindrical, ,"PCL MW = 37,000.",70.0,90.0,0.6
+193,https://10.1016/j.msec.2017.05.003,PCL [90 wt%] Hydroxyapatite [10 wt%] ,800 µm Cylindrical, ,"PCL MW = 37,000.",70.0,90.0,0.6
+194,https://10.1016/j.msec.2017.05.003,PCL [80 wt%] Hydroxyapatite [20 wt%] ,800 µm Cylindrical, ,"PCL MW = 37,000.",70.0,90.0,0.6
+195,https://10.1108/rpj.03-2016-0035,PCL [100 wt%] ,400 µm Cylindrical, ,"PCL Mol Number = 80,000",500.0,180.0,0.4
+196,https://10.1108/rpj.03-2016-0035,PCL [100 wt%] ,700 µm Cylindrical, ,"PCL Mol Number = 80,000",500.0,180.0,0.4
+202,https://10.1115/1.4031174,PCL [100 wt%] ,300 µm Cylindrical, ,"PCL Mol Wt - 43,500 - 50,000 kDa. Alginate microspheres were delivered into the PCL scaffold",500.0,120.0,1.4
+208,https://10.1016/j.jmbbm.2019.02.014,Alginate [3 wt%] ,200 µm Cylindrical,Primary Rat Schwann Cells (0.5),Crosslinking with CaCl2 was per layer,30.0,20.0,14.0
+209,https://10.1016/j.jmbbm.2019.02.014,Alginate [1.5 wt%] ,200 µm Cylindrical,Primary Rat Schwann Cells (0.5),Crosslinking with CaCl2 was per layer,10.0,20.0,26.0
+210,https://10.1016/j.jmbbm.2019.02.014,Gelatin [50 wt%] ,24 Gauge Cylindrical, ,Alginate was impregnated into the gelatin framework. After impregnation the gelatin was removed through an incubation process.,80.0,50.0,16.0
+211,https://10.1088/1361-6560/aabd1f,Gelatin [10 wt%] ,Conical, ,50% of microbubbles by gelatin weight was added to the hydrogel,40.0,70.0,30.0
+213,https://10.1016/j.matlet.2018.01.032,Gelatin [15 wt%] ,250 µm Cylindrical, ,Scaffolds were crosslinked with 12mg/ml EDC and 1.5mg/ml NHS for 4 Hours.,60.0,37.0,15.0
+214,https://10.1371/journal.pone.0157214,Alginate [8 wt%] Gelatin [2 wt%] ,250 µm Cylindrical,Primary Human Adipose Derived Stem Cells (3),,200.0,36.0,10.0
+215,https://10.1016/j.jmst.2016.01.007,Alginate [40 mg/mL] Gelatin [200 mg/ml] ,400 µm Cylindrical, ,"Scaffolds were first immersed into the CaCl2 solution, and then glutaraldehyde 1wt% for 30 minutes.",20.0,37.0,2.0
+217,https://10.3390/jfb8040048,Alginate [2 wt%] ,200 µm Conical, ,Printed into CaCl2 and poly(ethyleneimine) solution,10.0,25.0,14.0
+218,https://10.1021/acsbiomaterials.6b00258,Alginate [2 wt%] ,200 µm Conical,Primary Chick Chondrocytes (5),Printed into (50mM CaCl2 and .1wt% poly(ethyleneime) solution.,10.0,25.0,7.5
+219,https://10.1021/acsbiomaterials.6b00258,Alginate [2 wt%] ,200 µm Conical,Primary Chick Chondrocytes (5),Printed into (100mM CaCl2 and .1wt% poly(ethyleneime) solution.,10.0,25.0,6.5
+220,https://10.1021/acsbiomaterials.6b00258,Alginate [2 wt%] ,200 µm Conical,Primary Chick Chondrocytes (5),Printed into (200mM CaCl2 and .1wt% poly(ethyleneime) solution.,10.0,25.0,5.5
+221,https://10.1089/ten.tec/2017.0346,Alginate [2.5 wt%] ,250 µm Conical, ,,10.0,22.0,9.0
+222,https://10.1021/acs.biomaterials.6b00196,Alginate [2.5 wt%] ,18 Gauge Cylindrical,Human Adipose Stem Cells (1.375),Crosslinked post-print with CaCl2,20.0,37.0,15.0
+223,https://10.1016/j.biomaterials.2014.07.002,Alginate [5 wt%] Gelatin [5 wt%] ,410 µm Cylindrical,Human Osteogenic Sarcoma Cells (0.5),Dispensed into a solution consisting of 0.4% CaCl2 and polyphosphate at a ratio of 2:1.,90.0,30.0,26.0
+225,https://10.1021/acs.biomac.9b01112,PLGA [100 wt%] ,400 µm Cylindrical, ,PLGA MW = 142 kDa. Polymer degradation and MW reduction occurred at high temperatures needed to print.,500.0,200.0,12.0
+226,https://10.1021/acsbiomaterials.8b01277,Hyaluronic Acid Methacrylated [1 wt%] Hyaluronic Acid [3 wt%] Gelatin Methacrylated [4 wt%] Gelatin [2 wt%] ,22 Gauge Cylindrical,Primary Human Adipose-derived Mesenchymal Stem Cells (1),Whole construcst exposed to UV light for 45 seconds.,300.0,25.0,3.25
+227,https://10.1021/acsbiomaterials.8b01277,Hyaluronic Acid Methacrylated [1.5 wt%] Hyaluronic Acid [3 wt%] Gelatin Methacrylated [1.5 wt%] Gelatin [3 wt%] ,22 Gauge Cylindrical,21 PT Breast Cancer Cells (5),Whole construcst exposed to UV light for 45 seconds.,300.0,25.0,2.0
+232,https://10.1088/1758-5090/8/3/035013,PCL [100 wt%] ,250 µm Conical, ,"PCL Mol Wt = 65,000",700.0,80.0,2.91665
+233,https://10.1088/1758-5090/8/3/035013,PLGA [100 wt%] ,250 µm Conical, ,"PLGA Mol Wt = 50,000 - 75,000",600.0,140.0,4.166667
+234,https://10.1088/1758-5090/8/3/035013,Alginate [4 wt%] ,21 Gauge Conical,NIH 3T3 Fibroblasts (1),CaCl2 Crosslinking occurred post printing.,30.0,18.0,1.3333
+239,https://10.1088/1758-5090/aa6265,PCL [100 wt%] ,560 µm Conical, ,After printing the entire construct was irradiated for an additional 69 seconds.,300.0,80.0,1.0
+240,https://10.1088/1758-5090/aa8cb7,PCL [100 wt%] ,250 µm Cylindrical, ,,300.0,93.0,5.0
+241,https://10.1007/s10856-020-06374-w,Gelatin Methacrylated [10 wt%] ,25 Gauge Conical,Adipose-Derived Mesenchymal Stem Cells (4),"Crosslinking occurred post printing. Note: Paper reports that the printhead was at a temperature of 19C, but the cartridge heater was set to 23C.",50.0,23.0,5.0
+242,https://10.1088/1758-5090/aba503,Gelatin Methacrylated [7.5 wt%] Alginate [2 wt%] ,23 Gauge Cylindrical,Human Umbilical Vein Endothelial Cells (8),Crosslinking occurred post printing.,50.0,25.0,4.0
+243,https://10.1088/1758-5090/aba503,Gelatin Methacrylated [10 wt%] Alginate [1 wt%] ,23 Gauge Cylindrical,Human Umbilical Vein Endothelial Cells (8),Crosslinking occurred post printing.,50.0,25.0,4.0
+244,https://10.1088/1758-5090/aba503,Gelatin Methacrylated [10 wt%] Alginate [2 wt%] ,23 Gauge Cylindrical,Human Umbilical Vein Endothelial Cells (8),Crosslinking occurred post printing.,50.0,25.0,4.0
+245,https://10.1088/1758-5090/ab98e5,Alginate [2 wt%] ,410 µm Cylindrical,NIH 3T3 Fibroblasts (1),Precrosslinking was done with the CaCO3. Post printing crosslinking was done with 100mM CaCl2 for 10 minutes.,17.0,25.0,4.0
+254,https://10.1016/j.jmbbm.2019.103533,PCL [100 wt%] ,330 µm Cylindrical, ,"PCL molecular weight = 80,000 gmol-1.",300.0,90.0,5.0
+255,https://10.1016/j.jmbbm.2019.103533,Alginate [4 wt%] ,19 Gauge Cylindrical,BEL-7402 Adenocarcinoma Cells (1),Crosslinking occurred post printing.,45.0,37.0,1.5
+256,https://10.1016/j.jmbbm.2019.103533,Alginate [4 wt%] Beta Tricalcium Phosphate [1 wt%] ,19 Gauge Cylindrical,BEL-7402 Adenocarcinoma Cells (1),Crosslinking occurred post printing.,45.0,37.0,1.5
+257,https://10.1016/j.jmbbm.2019.103533,Alginate [4 wt%] Beta Tricalcium Phosphate [8 wt%] ,19 Gauge Cylindrical,BEL-7402 Adenocarcinoma Cells (1),Crosslinking occurred post printing.,50.0,37.0,1.5
+258,https://10.1016/j.msec.2020.111072,PCL [100 wt%] ,180 µm Cylindrical, ,"90,000-70,000 molecular weight",500.0,100.0,0.334
+259,https://10.1016/j.msec.2020.111072,PCL [100 wt%] ,250 µm Cylindrical, ,"90,000-70,000 molecular weight",500.0,100.0,1.167
+260,https://10.1016/j.msec.2020.111072,PCL [100 wt%] ,330 µm Cylindrical, ,"90,000-70,000 molecular weight",500.0,100.0,1.583
+261,https://10.1016/j.msec.2020.111072,PCL [100 wt%] ,410 µm Cylindrical, ,"90,000-70,000 molecular weight",500.0,100.0,1.417
+262,https://10.1016/j.msec.2020.111072,PCL [100 wt%] ,580 µm Cylindrical, ,"90,000-70,000 molecular weight",500.0,100.0,0.667
+263,https://10.1016/j.msec.2020.111072,PCL [100 wt%] ,1070 µm Cylindrical, ,"90,000-70,000 molecular weight",500.0,100.0,0.917
+264,https://10.1016/j.bprint.2020.e00092,Alginate [2.5 wt%] ,330 µm Cylindrical, ,This print used coaxial extrusion with a core of pluronic F127 mixed with 5wt% CaCl2 for post printing crosslinking and a precrosslinked alginate shell using .2 wt% CaCl2.,150.0,25.0,5.0
+265,https://10.1016/j.bprint.2020.e00092,Pluronic F127 [30 wt%] ,1070 µm Cylindrical, ,This print used coaxial extrusion with a core of pluronic F127 mixed with 5wt% CaCl2 for post printing crosslinking and a precrosslinked alginate shell using .2 wt% CaCl2.,50.0,25.0,5.0
+266,https://10.3390/polym12091930,Gelatin Methacrylated [5 wt%] ,27 Gauge,Human Dermal Fibroblasts (5),"5wt% was best for the Human Dermal Fibroblasts, but the least printable…",100.0,22.0,20.0
+267,https://10.3390/polym12091930,Gelatin Methacrylated [10 wt%] ,27 Gauge,Human Dermal Fibroblasts (5),,100.0,22.0,20.0
+268,https://10.3390/polym12091930,Gelatin Methacrylated [15 wt%] ,27 Gauge,Human Dermal Fibroblasts (5),,100.0,22.0,20.0
+275,https://10.1021/am503878d,Alginate [3.1 wt%] Ethylene Glycol [25.8 vol %] ,23 Gauge, ,Support Alginate Gel,60.0,25.0,5.0
+277,https://10.1039/c3bm00012e,Alginate [2 wt%] Gelatin [10 wt%] ,200 μm Cylindrical, ,,55.15808,5.0,1.67
+278,https://10.1039/c3bm00012e,Alginate [4 wt%] Gelatin [10 wt%] ,200 μm Cylindrical,Primary Myoblasts (0.5),,65.50022,5.0,1.67
+279,https://10.1016/jijbiomac.2020.08.180,Chitosan [10 wt%] ,250 μm Conical, ,,350.0,37.0,10.0
+280,https://10.3389/fbioe.2020.00217,Methylcellulose [10 wt%] ,410 μm Conical, ,Sacrificial ink,180.0,25.0,10.0
+281,https://10.1016/j.msec.2017.05.144,Gelatin [10 wt%] Alginate [2 wt%] ,25 Gauge Cylindrical,NIH 3T3 Fibroblasts (5),Printed into a laponite bath,103.4214,37.0,2.0
+283,https://10.1007/s10439-016-1685-4,Alginate [16.7 wt%] ,250 μm Conical, ,Crosslinked with 1M CaCl2 for 10 minutes post printing.,400.0,25.0,4.5
+284,https://10.1007/s10439-016-1685-4,Alginate [12.548 wt%] Gellan Gum [1.716 wt%] ,410 μm Conical, ,Crosslinked with 1M CaCl2 for 10 minutes post printing.,450.0,25.0,4.0
+285,https://10.1007/s10439-016-1685-4,Alginate [12.548 wt%] Gellan Gum [1.716 wt%] ,250 μm Conical, ,Crosslinked with 1M CaCl2 for 10 minutes post printing.,400.0,25.0,4.5
+288,https://10.1016/j.ijbiomac.2019.08.124,Gelatin Methacrylated [10 wt%] ,200 μm Cylindrical, ,,70.0,23.0,10.833
+289,https://10.1088/1758-5090/aa8dd8,Pluronic F127 [25 wt%] ,125 μm Cylindrical, ,,200.0,24.0,15.0
+290,https://10.1088/1758-5090/aa8dd8,Alginate [8 wt%] ,125 μm Cylindrical, ,Bioink contained 1% pre-crosslinked alginate,350.0,24.0,10.0
+291,https://10.1088/1758-5090/aa8dd8,Alginate [8 wt%] ,165 μm Cylindrical, ,Bioink contained 1% pre-crosslinked alginate,200.0,24.0,10.0
+292,https://10.1088/1758-5090/aa8dd8,Alginate [2 wt%] Gelatin [10 wt%] ,125 μm Cylindrical, ,,80.0,37.0,10.0
+293,https://10.1021/acsami.9b05460,Gelatin [7.5 wt%] Carboxymethyl Cellulose [7.5 wt%] Hydroxyapatite [10 wt%] ,22 Gauge Cylindrical, ,,34.4738,28.0,16.6667
+294,https://10.1021/acsami.9b05460,Gelatin [7.5 wt%] Carboxymethyl Cellulose [7.5 wt%] Hydroxyapatite [10 wt%] ,22 Gauge Cylindrical, ,,34.4738,28.0,16.6667
+295,https://10.1021/acsami.9b05460,Gelatin [5 wt%] Carboxymethyl Cellulose [5 wt%] Hydroxyapatite [10 wt%] ,22 Gauge Cylindrical, ,,34.4738,22.0,12.5
+296,https://10.3389/fbioe.2020.00400,Chitosan [2 wt%] Gelatin [4 wt%] ,330 μm Cylindrical, ,,250.0,20.0,2.0
+297,https://10.1016/j.msec.2017.05.144,Alginate [2 wt%] Gelatin [10 wt%] ,250 μm Cylindrical,NIH 3T3 Fibroblasts (5),Thermally gelled in the 2 w/v% nanoclay bath at room temperature.,103.4214,37.0,2.0
+298,https://10.1016/j.colsurfb.2019.06.069,Alginate [2 wt%] Gelatin [15 wt%] ,330 μm Cylindrical,Human amniotic epithelial cells (1),,200.0,30.0,7.0
+299,https://10.1016/j.colsurfb.2019.06.069,Alginate [2 wt%] Gelatin [15 wt%] ,330 μm Cylindrical,Wharton’s jelly derived Mesenchymal Stem Cells (1),,200.0,30.0,7.0
+302,https://10.1088/1748-605X/abbcc9,Gelatin Methacrylated [10 wt%] ,260 μm Cylindrical, ,,300.0,15.0,0.49995
+303,https://10.1089/ten.TEC.2020.0053,Gelatin Methacrylated [5 wt%] ,260 μm, ,,300.0,22.0,6.0
+304,https://10.1088/1758-5090/ab98e4,Gelatin [7.5 wt%] Alginate Oxidized [3.75 wt%] ,330 μm Cylindrical,C2C12 Myoblasts (8),,30.0,30.0,10.0
+305,https://10.1088/1758-5090/ab98e4,Gelatin [7.5 wt%] Alginate Oxidized [3.75 wt%] ,330 μm Cylindrical,C2C12 Myoblasts (8),,40.0,30.0,10.0
+306,https://10.1088/1758-5090/ab98e4,Gelatin [7.5 wt%] Alginate Oxidized [3.75 wt%] ,250 μm Cylindrical,C2C12 Myoblasts (8),,60.0,30.0,10.0
+307,https://10.1021/acsomega.0c05036,Cellulose Nanofibrillated [1.15 wt%] ,150 μm Cylindrical, ,,100.0,25.0,10.0
+308,https://10.1088/1758-5090/ab0692,Gelatin [5 wt%] Alginate [4 wt%] ,510 μm Cylindrical, ,,150.0,26.0,20.0
+309,https://10.1088/1758-5090/ab0692,Gelatin [5 wt%] Alginate [4 wt%] Cellulose Nanofibrils [0.25 wt%] ,511 μm Cylindrical, ,,150.0,26.0,37.5
+310,https://10.1088/1758-5090/ab0692,Gelatin [5 wt%] Alginate [4 wt%] Bioactive Glass [1 wt%] ,512 μm Cylindrical, ,,160.0,26.0,21.0
+311,https://10.1088/1758-5090/ab0692,Gelatin [5 wt%] Alginate [4 wt%] Cellulose Nanofibrils [0.25 wt%] Bioactive Glass [1 wt%] ,513 μm Cylindrical, ,,200.0,26.0,57.5
+312,https://10.1088/1758-5090/ab0692,Gelatin [5 wt%] Alginate [4 wt%] ,514 μm Cylindrical,Saos-2 Human Bone Osteosarcoma cells (5),,90.0,26.0,27.5
+313,https://10.1088/1758-5090/ab0692,Gelatin [5 wt%] Alginate [4 wt%] Cellulose Nanofibrils [0.25 wt%] ,515 μm Cylindrical,Saos-2 Human Bone Osteosarcoma cells (5),,150.0,26.0,40.0
+314,https://10.1088/1758-5090/ab0692,Gelatin [5 wt%] Alginate [4 wt%] Cellulose Nanofibrils [0.25 wt%] ,516 μm Cylindrical,Human Bone Marrow-derived Mesenchymal Stem Cells (5),,260.0,26.0,43.5
+315,https://10.1088/1758-5090/ab0692,Gelatin [5 wt%] Alginate [4 wt%] Bioactive Glass [1 wt%] ,517 μm Cylindrical,Saos-2 Human Bone Osteosarcoma cells (5),,190.0,26.0,20.0
+316,https://10.1088/1758-5090/ab0692,Gelatin [5 wt%] Alginate [4 wt%] Cellulose Nanofibrils [0.25 wt%] Bioactive Glass [1 wt%] ,518 μm Cylindrical,Saos-2 Human Bone Osteosarcoma cells (5),,200.0,26.0,56.5
+317,https://10.1088/1758-5090/ab0692,Gelatin [5 wt%] Alginate [4 wt%] Cellulose Nanofibrils [0.25 wt%] Bioactive Glass [1 wt%] ,519 μm Cylindrical,Human Bone Marrow-derived Mesenchymal Stem Cells (5),,240.0,26.0,53.5
+319,https://10.1016/j.actbio.2019.05.062,Gelatin Methacrylated [10 wt%] ,200 μm Conical, ,,70.0,23.0,10.833
+320,https://10.1002/adhm.201800418,Gelatin Methacrylated [10 wt%] ,Cylindrical,Equine-derived Mesenchymal Stromal Cells (20),,50.0,16.5,25.0
+321,https://10.1002/adhm.201800418,Pluronic F127 [40 wt%] ,Cylindrical, ,,100.0,25.0,22.0
+322,https://10.1021/acsbiomaterials.0c00940,Hyaluronic Acid Methacrylated [10 mg/ml] Collagen [3 mg/ml] ,27 Gauge, ,Using either 3mg/ml of LAP or I2959 the scaffold was crosslinked with UV for 2 seconds every 2 layers,50.0,25.0,10.0
+323,https://10.1021/acsami.7b03613,Alginate [0.5 wt%] Laponite [6 wt%] ,250 μm Conical, ,Printed structure was submerged in 2 wt% CaCl2,151.68472,25.0,0.875
+324,https://10.1021/acsami.7b03613,Gelatin [10 wt%] Laponite [7 wt%] ,250 μm Conical, ,,151.68472,25.0,0.875
+325,https://10.1002/adfm.201801850,Gelatin Methacrylated [7.5 wt%] ,100 μm Cylindrical,hiPSC‐derived Ventral Spinal Neuronal Progenitor Cells (10),Hydrogels crosslinked with 0.05 wt% LAP as the photoinitiator,3.44738,37.0,2.0
+326,https://10.1002/adfm.201801850,Gelatin Methacrylated [7.5 wt%] ,100 μm Cylindrical,miPSC‐derived Oligodendrocyte Progenitor Cells (10),Hydrogels crosslinked with 0.05 wt% LAP as the photoinitiator,3.44738,37.0,2.0
+327,https://10.1002/adfm.201801850,Gelatin Methacrylated [7.5 wt%] ,100 μm Cylindrical,PCS‐201‐010 Primary Dermal Fibroblasys (10),Hydrogels crosslinked with 0.05 wt% LAP as the photoinitiator,3.44738,37.0,2.0
+328,https://10.1002/adfm.201801850,Alginate [6 wt%] Methylcellulose [18 wt%] ,100 μm Cylindrical, ,Alginate of different viscosities were tested,551.5808,25.0,2.0
+329,https://10.1002/mabi.201900364,Gelatin Methacrylated [10 wt%] ,150 μm Conical, ,,120.0,30.0,10.0
+330,https://10.1088/1758-5090/aa90e2,Pluronic F127 [30 wt%] ,330 μm Cylindrical, ,,160.0,25.0,6.0
+331,https://10.1088/1758-5090/aa90e2,Pluronic F127 [29 wt%] PEG [1 wt%] ,330 μm Cylindrical, ,,130.0,25.0,6.0
+332,https://10.1088/1758-5090/aa90e2,Pluronic F127 [28 wt%] PEG [2 wt%] ,330 μm Cylindrical, ,,120.0,25.0,6.0
+333,https://10.1088/1758-5090/aa90e2,Pluronic F127 [27 wt%] PEG [3 wt%] ,330 μm Cylindrical, ,,90.0,25.0,6.0
+334,https://10.1088/1758-5090/aa90e2,Pluronic F127 [26 wt%] PEG [4 wt%] ,330 μm Cylindrical, ,,70.0,25.0,6.0
+335,https://10.1088/1758-5090/aa90e2,Pluronic F127 [20 wt%] ,330 μm Cylindrical, ,,60.0,25.0,6.0
+336,https://10.1088/1758-5090/aaccbf,Alginate [2 wt%] ,300 μm Cylindrical,Human Adipose Derived Stem Cells (5),Post printing constructs were submerged in 2 wt% CaCl2 for 5 mins,1000.0,37.0,12.0
+339,https://10.1088/1758-5090/8/1/015019,Gelatin Methacrylated [10 wt%] Hyaluronic Acid Methacrylated [2 wt%] ,860 μm Conical, ,The printing was done through a biopen with a collinear extrusion nozzle,140.0,25.0,30.0
+340,https://10.3390/ma9090756,Pluronic F127 [24.5 wt%] ,21 Gauge Cylindrical, ,,100.0,25.0,0.02
+341,https://10.1002/term.2058,Alginate [3 wt%] Methylcellulose [9 wt%] ,250 μm Cylindrical, ,Post printing constructs were crosslinked with 0.1M CaCl2,80.0,25.0,20.0
+342,https://10.1002/term.2058,Alginate [3 wt%] ,200 μm Cylindrical, ,Post printing constructs were crosslinked with 0.1M CaCl2,80.0,25.0,20.0
+344,https://10.3389/fbioe.2020.00484,Gelatin Methacrylated [10 wt%] ,410 μm Conical,Human Bone Marrow Mesenchymal Stem Cells (4),Physically crosslinked for 10 minutes at 4C followed by UV photopolymerization,35.0,21.0,5.0
+345,https://10.1089/ten.TEC.2018.0293,PCL [100 wt%] ,210 μm Conical, ,,450.0,25.0,4.0
+346,https://10.1089/ten.TEC.2018.0293,PCL [98 wt%] Lidocaine [2 wt%] ,410 μm Conical, ,,450.0,25.0,4.0
+347,https://10.1089/ten.TEC.2018.0293,PCL [96 wt%] Lidocaine [4 wt%] ,210 μm Conical, ,,450.0,25.0,4.0
+348,https://10.1088/1758-5090/ab10ae,Carbopol [0.7 wt%] ,250 μm Cylindrical, ,,40.0,23.0,3.0
+350,https://10.1016/j.msec.2019.04.026,PCL [100 wt%] ,159 μm Cylindrical, ,,551.5808,100.0,1.0
+351,https://10.1016/j.msec.2019.04.026,PCL [99.9 wt%] Graphene Oxide [0.1 wt%] ,159 μm Cylindrical, ,,551.5808,100.0,1.0
+352,https://10.1016/j.msec.2019.04.026,PCL [99.5 wt%] Graphene Oxide [0.5 wt%] ,159 μm Cylindrical, ,,551.5808,100.0,1.0
+353,https://10.1088/1758-5090/ab98e4,Alginate Oxidized [3.75 wt%] Gelatin [7.5 wt%] ,330 μm Conical, ,,30.0,30.0,10.0
+354,https://10.1088/1758-5090/ab98e4,Alginate Oxidized [3.75 wt%] Gelatin [7.5 wt%] ,250 μm Conical, ,,60.0,30.0,10.0
+355,https://10.1038/s41598-020-78977-w,PCL [100 wt%] ,24 Gauge Cylindrical, ,PCL molecular weight 43-50 kDa,600.0,100.0,1.4
+356,https://10.1038/s41598-020-78977-w,PCL [99.5 wt%] Graphene Oxide [0.5 wt%] ,24 Gauge Cylindrical, ,PCL molecular weight 43-50 kDa,600.0,100.0,1.4
+357,https://10.1038/s41598-020-78977-w,PCL [99 wt%] Graphene Oxide [1 wt%] ,24 Gauge Cylindrical, ,PCL molecular weight 43-50 kDa,600.0,100.0,1.4
+358,https://10.1038/s41598-020-78977-w,PCL [97 wt%] Graphene Oxide [3 wt%] ,24 Gauge Cylindrical, ,PCL molecular weight 43-50 kDa,600.0,100.0,1.4
+359,https://10.3390/ma13030512,PCL [100 wt%] ,330 μm Cylindrical, ,,600.0,90.0,20.0
+360,https://10.1016/j.colsurfb.2019.06.069,Gelatin [15 wt%] Alginate [2 wt%] ,330 μm Cylindrical,Wharton's Jelly Derived Mesenchymal Stem Cells (1),,200.0,30.0,7.0
+361,https://10.1016/j.colsurfb.2019.06.069,Gelatin [15 wt%] Alginate [2 wt%] ,330 μm Cylindrical,Human Amniotic Epithelial Cells (1),,200.0,30.0,7.0
+362,https://10.1038/s41598-020-64049-6,PCL [100 wt%] ,100 μm Cylindrical, ,"PCL molecular weight is 73,000",590.0,85.0,4.0
+364,https://10.1088/1758-5090/8/1/015016,PCL [100 wt%] ,, ,"PCL molecular weight is 43,000 - 50,000",200.0,77.0,16.0
+366,https://10.1088/1758-5090/aac70b,Collagen [3 mg/ml] ,610 μm Conical,HEPG2 Liver Cells (20),,15.0,4.0,13.75
+367,https://10.1088/1748-605X/ab38c6,PCL [100 wt%] ,Cylindrical, ,"PCL had amolecular weight of 43,000 g/mol",660.0,105.0,2.0
+368,https://10.1021/acsami.8b13166,Alginate [3 wt%] Gellan Gum [3.5 wt%] ,410 μm Conical, ,,35.0,25.0,15.0
+373,https://10.1039/d0bm01784a,Gelatin Methacrylated [6 wt%] Gelatin [3.6 wt%] ,27 Gauge Cylindrical,Human Dermal Fibroblasts (1),,350.0,27.0,8.0
+374,https://10.1016/j.reth.2021.01.001,PCL [40 wt%] Beta Tricalcium Phosphate [2.5 wt%] ,Cylindrical, ,"The bioink was prepared in 1, 4-dioxane to achieve desired extrudability",100.0,25.0,6.5
+382,https://10.1016/j.ijpharm.2021.120330,Lidocaine [30 wt%] PCL [70 wt%] ,610 μm Cylindrical, ,"PCL molecular weight of 50,000 g/mol",125.0,110.0,1.0
+383,https://10.1016/j.ijpharm.2021.120330,Lidocaine [5 wt%] PCL [95 wt%] ,610 μm Cylindrical, ,"PCL molecular weight of 50,000 g/mol",125.0,110.0,1.0
+384,https://10.1016/j.ijpharm.2021.120330,PCL [100 wt%] ,610 μm Cylindrical, ,"PCL molecular weight of 50,000 g/mol",400.0,110.0,1.0
+385,https://10.1088/1748-605X/abe55e,Alginate Dialdehyde [30 wt%] Laponite [12 wt%] ,410 μm Conical, ,,130.0,25.0,2.0
+386,https://10.3389/fbioe.2020.00400,Chitosan [2 wt%] Gelatin [4 wt%] ,330 μm Cylindrical, ,Crosslinked with 10 w/v % tripolyphosphate at 4 C for 60 minutes post printing,250.0,20.0,10.0
+387,https://10.3389/fbioe.2020.00400,Chitosan [2 wt%] Gelatin [6 wt%] ,330 μm Cylindrical, ,Crosslinked with 10 w/v % tripolyphosphate at 4 C for 60 minutes post printing,250.0,20.0,10.0
+388,https://10.1016/j.msec.2020.111433,PCL [100 wt%] ,, ,PCL MW = 50 kDa,600.0,140.0,11.75
+389,https://10.1089/ten.TEA.2019.0237,PCL [90 wt%] Hydroxyapatite [10 wt%] ,700 μm Cylindrical, ,,3.5,120.0,8.0
+390,https://10.1089/ten.TEA.2019.0237,PCL [80 wt%] Hydroxyapatite [20 wt%] ,700 μm Cylindrical, ,,4.5,125.0,8.0
+391,https://10.1089/ten.TEA.2019.0237,PCL [70 wt%] Hydroxyapatite [30 wt%] ,700 μm Cylindrical, ,,4.5,125.0,8.0
+392,https://10.1016/j.ijpharm.2018.11.044,Diclofenac Sodium [20 wt%] Lactose [10 wt%] Polyplasdone [2 wt%] Carbopol [1 wt%] ,400 μm Conical, ,"Insoluble Fillers of AvicelPH101 and AvicelPH105 were used. They had a concentration of 37.8wt% and 25.2wt% ,respectively.",258.0,25.0,10.0
+393,https://10.1016/j.ijpharm.2018.11.044,Diclofenac Sodium [20 wt%] Lactose [10 wt%] Polyplasdone [2 wt%] Carbopol [3 wt%] ,600 μm Conical, ,"Insoluble Fillers of AvicelPH101 and AvicelPH105 were used. They had a concentration of 37.8wt% and 25.2wt% ,respectively.",251.0,25.0,10.0
+394,https://10.1016/j.ijpharm.2018.11.044,Diclofenac Sodium [20 wt%] Lactose [10 wt%] Polyplasdone [8 wt%] Carbopol [1 wt%] ,400 μm Conical, ,"Insoluble Fillers of AvicelPH101 and AvicelPH105 were used. They had a concentration of 34.2wt% and 22.8wt% ,respectively.",273.0,25.0,10.0
+395,https://10.1016/j.ijpharm.2018.11.044,Diclofenac Sodium [20 wt%] Lactose [10 wt%] Polyplasdone [8 wt%] Carbopol [3 wt%] ,600 μm Conical, ,"Insoluble Fillers of AvicelPH101 and AvicelPH105 were used. They had a concentration of 34.2wt% and 22.8wt% ,respectively.",369.0,25.0,10.0
+396,https://10.1016/j.ijpharm.2018.11.044,Diclofenac Sodium [20 wt%] Lactose [30 wt%] Polyplasdone [2 wt%] Carbopol [1 wt%] ,600 μm Conical, ,"Insoluble Fillers of AvicelPH101 and AvicelPH105 were used. They had a concentration of 25.8wt% and 17.2wt% ,respectively.",65.0,25.0,10.0
+397,https://10.1016/j.ijpharm.2018.11.044,Diclofenac Sodium [20 wt%] Lactose [30 wt%] Polyplasdone [2 wt%] Carbopol [3 wt%] ,400 μm Conical, ,"Insoluble Fillers of AvicelPH101 and AvicelPH105 were used. They had a concentration of 25.8wt% and 17.2wt% ,respectively.",226.0,25.0,10.0
+398,https://10.1016/j.ijpharm.2018.11.044,Diclofenac Sodium [20 wt%] Lactose [30 wt%] Polyplasdone [8 wt%] Carbopol [1 wt%] ,600 μm Conical, ,"Insoluble Fillers of AvicelPH101 and AvicelPH105 were used. They had a concentration of 22.2wt% and 14.8wt% ,respectively.",97.0,25.0,10.0
+399,https://10.1016/j.ijpharm.2018.11.044,Diclofenac Sodium [20 wt%] Lactose [30 wt%] Polyplasdone [8 wt%] Carbopol [3 wt%] ,400 μm Conical, ,"Insoluble Fillers of AvicelPH101 and AvicelPH105 were used. They had a concentration of 22.2wt% and 14.8wt% ,respectively.",336.0,25.0,10.0
+400,https://10.1016/j.ijpharm.2018.11.044,Diclofenac Sodium [35 wt%] Lactose [20 wt%] Polyplasdone [5 wt%] Carbopol [2 wt%] ,500 μm Conical, ,"Insoluble Fillers of AvicelPH101 and AvicelPH105 were used. They had a concentration of 21wt% and 14wt% ,respectively.",217.0,25.0,10.0
+401,https://10.1016/j.ijpharm.2018.11.044,Diclofenac Sodium [35 wt%] Lactose [20 wt%] Polyplasdone [5 wt%] Carbopol [2 wt%] ,500 μm Conical, ,"Insoluble Fillers of AvicelPH101 and AvicelPH105 were used. They had a concentration of 21wt% and 14wt% ,respectively.",218.00000000000003,25.0,10.0
+402,https://10.1016/j.ijpharm.2018.11.044,Diclofenac Sodium [35 wt%] Lactose [20 wt%] Polyplasdone [5 wt%] Carbopol [2 wt%] ,500 μm Conical, ,"Insoluble Fillers of AvicelPH101 and AvicelPH105 were used. They had a concentration of 21wt% and 14wt% ,respectively.",211.0,25.0,10.0
+403,https://10.1016/j.ijpharm.2018.11.044,Diclofenac Sodium [50 wt%] Lactose [10 wt%] Polyplasdone [2 wt%] Carbopol [1 wt%] ,600 μm Conical, ,"Insoluble Fillers of AvicelPH101 and AvicelPH105 were used. They had a concentration of 19.8wt% and 13.2wt% ,respectively.",154.0,25.0,10.0
+404,https://10.1016/j.ijpharm.2018.11.044,Diclofenac Sodium [50 wt%] Lactose [10 wt%] Polyplasdone [2 wt%] Carbopol [3 wt%] ,400 μm Conical, ,"Insoluble Fillers of AvicelPH101 and AvicelPH105 were used. They had a concentration of 19.8wt% and 13.2wt% ,respectively.",237.0,25.0,10.0
+405,https://10.1016/j.ijpharm.2018.11.044,Diclofenac Sodium [50 wt%] Lactose [10 wt%] Polyplasdone [8 wt%] Carbopol [1 wt%] ,600 μm Conical, ,"Insoluble Fillers of AvicelPH101 and AvicelPH105 were used. They had a concentration of 16.2wt% and 10.8wt% ,respectively.",115.0,25.0,10.0
+406,https://10.1016/j.ijpharm.2018.11.044,Diclofenac Sodium [50 wt%] Lactose [10 wt%] Polyplasdone [8 wt%] Carbopol [3 wt%] ,400 μm Conical, ,"Insoluble Fillers of AvicelPH101 and AvicelPH105 were used. They had a concentration of 16.2wt% and 10.8wt% ,respectively.",283.0,25.0,10.0
+407,https://10.1016/j.ijpharm.2018.11.044,Diclofenac Sodium [50 wt%] Lactose [30 wt%] Polyplasdone [2 wt%] Carbopol [1 wt%] ,400 μm Conical, ,"Insoluble Fillers of AvicelPH101 and AvicelPH105 were used. They had a concentration of 7.8wt% and 5.2wt% ,respectively.",56.99999999999999,25.0,10.0
+408,https://10.1016/j.ijpharm.2018.11.044,Diclofenac Sodium [50 wt%] Lactose [30 wt%] Polyplasdone [2 wt%] Carbopol [3 wt%] ,600 μm Conical, ,"Insoluble Fillers of AvicelPH101 and AvicelPH105 were used. They had a concentration of 7.8wt% and 5.2wt% ,respectively.",86.0,25.0,10.0
+409,https://10.1016/j.ijpharm.2018.11.044,Diclofenac Sodium [50 wt%] Lactose [30 wt%] Polyplasdone [8 wt%] Carbopol [1 wt%] ,400 μm Conical, ,"Insoluble Fillers of AvicelPH101 and AvicelPH105 were used. They had a concentration of 4.2wt% and 2.8wt% ,respectively.",70.0,25.0,10.0
+410,https://10.1016/j.ijpharm.2018.11.044,Diclofenac Sodium [50 wt%] Lactose [30 wt%] Polyplasdone [8 wt%] Carbopol [3 wt%] ,600 μm Conical, ,"Insoluble Fillers of AvicelPH101 and AvicelPH105 were used. They had a concentration of 4.2wt% and 2.8wt% ,respectively.",105.0,25.0,10.0
+411,https://10.1016/j.jfma.2020.10.022,Hydroxyapatite [90 wt%] PLGA [10 wt%] ,, ,"Bioink was a slurry Hyperelastic Bone"" purchased from Allevi Inc.""",240.0,25.0,1.0
+413,https://10.1016/j.msec.2020.111299,Alginate [15 wt%] Hydroxyapatite [12 wt%] ,Conical, ,Microneedles were 3D printed and crosslinked with CaCl2,1000.0,25.0,9.0
+414,https://10.1016/j.msec.2020.111299,Alginate [15 wt%] Hydroxyapatite [8 wt%] ,Conical, ,Microneedles were 3D printed and crosslinked with CaCl2,1000.0,25.0,9.0
+415,https://10.1016/j.msec.2020.111299,Alginate [15 wt%] Hydroxyapatite [4 wt%] ,Conical, ,Microneedles were 3D printed and crosslinked with CaCl2,1000.0,25.0,9.0
+416,https://10.1016/j.msec.2020.111299,Alginate [15 wt%] ,Conical, ,Microneedles were 3D printed and crosslinked with CaCl2,1000.0,25.0,9.0
+421,https://10.1016/j.ijpharm.2019.04.018,Hydroxypropyl Cellulose [12 wt%] ,21 Gauge Cylindrical, ,HPC was dissolved in a solvent mixture of ethanol:water at 1:1 w/w. 18 and 20 wt% HPC bioink was printable but too viscous,68.9476,25.0,8.0
+422,https://10.1016/j.ijpharm.2019.04.018,Hydroxypropyl Cellulose [14 wt%] ,21 Gauge Cylindrical, ,HPC was dissolved in a solvent mixture of ethanol:water at 1:1 w/w. 18 and 20 wt% HPC bioink was printable but too viscous,68.9476,25.0,8.0

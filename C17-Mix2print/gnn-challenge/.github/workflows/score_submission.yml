@@ -1,0 +1,221 @@
+name: Score Submission
+
+on:
+  pull_request_target:
+    types: [opened, synchronize, reopened]
+    paths:
+      - 'submissions/inbox/**/*.enc'
+
+permissions:
+  contents: write    # Needed to push leaderboard.csv
+  pull-requests: write # Needed to comment
+
+jobs:
+  score_and_update:
+    runs-on: ubuntu-latest
+    steps:
+      # 1. Checkout Main Branch (Organizer's Trusted Code & Leaderboard)
+      - name: Checkout Organizer Repo (Main)
+        uses: actions/checkout@v4
+        with:
+          ref: master
+          path: organizer_repo
+          fetch-depth: 0
+
+      # 2. Checkout Participant's Submission Files (Handle Forks)
+      - name: Checkout Participant Submission
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ github.event.pull_request.head.repo.full_name }}
+          ref: ${{ github.event.pull_request.head.ref }}
+          path: participant_repo
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+
+      - name: Install dependencies
+        run: pip install -r organizer_repo/requirements.txt
+
+      - name: Locate Encrypted Submission
+        id: find_sub
+        run: |
+          python -c "
+          import os, glob
+          
+          files = glob.glob('participant_repo/submissions/inbox/**/*.enc', recursive=True)
+          if not files:
+              print('::error::No .enc file found! Please run scripts/encrypt_submission.py before uploading.')
+              exit(1)
+              
+          enc_file = files[0]
+          
+          path_norm = enc_file.replace('\\\\', '/')
+          parts = path_norm.split('/')
+          try:
+              inbox_idx = parts.index('inbox')
+              team_name = parts[inbox_idx + 1]
+          except:
+              team_name = 'Unknown'
+              
+          print(f'Found submission: {enc_file}')
+          print(f'Team: {team_name}')
+          
+          abs_path = os.path.abspath(enc_file)
+          
+          with open(os.environ['GITHUB_OUTPUT'], 'a') as fh:
+              fh.write(f'enc_path={abs_path}\n')
+              fh.write(f'team_name={team_name}\n')
+          "
+
+      - name: Decode Labels
+        env:
+          TEST_LABELS_B64: ${{ secrets.TEST_LABELS_BASE64 }}
+        run: |
+          if [ -z "$TEST_LABELS_B64" ]; then
+            echo "::error::TEST_LABELS_B64 secret is missing!"
+            exit 1
+          fi
+          echo "$TEST_LABELS_B64" | base64 -d > test_labels.csv
+
+      - name: Decrypt Submission
+        env:
+          SUBMISSION_PRIVATE_KEY: ${{ secrets.SUBMISSION_PRIVATE_KEY }}
+        run: |
+          if [ -z "$SUBMISSION_PRIVATE_KEY" ]; then
+            echo "::error::SUBMISSION_PRIVATE_KEY secret is missing!"
+            exit 1
+          fi
+          python organizer_repo/competition/decrypt_workflow.py "${{ steps.find_sub.outputs.enc_path }}"
+
+      - name: Score Decrypted CSV
+        id: score
+        run: |
+          if [ ! -f "predictions.csv" ]; then
+            echo "::error::predictions.csv not found (decryption failed)!"
+            exit 1
+          fi
+          
+          python organizer_repo/competition/evaluate.py \
+            "predictions.csv" \
+            test_labels.csv \
+            --format markdown > score_report.md
+            
+          python organizer_repo/competition/evaluate.py \
+            "predictions.csv" \
+            test_labels.csv \
+            --format json > score_data.json
+            
+          cat score_report.md
+          
+          rm predictions.csv
+
+      - name: Update Leaderboard CSV
+        if: success()
+        run: |
+          python -c "
+          import pandas as pd
+          import os
+          import json
+          from datetime import datetime
+          
+          json_path = 'score_data.json'
+          csv_path = 'organizer_repo/leaderboard/leaderboard.csv'
+          team = '${{ steps.find_sub.outputs.team_name }}'
+          user = '${{ github.actor }}'
+          
+          with open(json_path, 'r') as f:
+              scores = json.load(f)
+              
+          score = scores.get('combined_nmae', 99.9)
+          print(f'Parsed Score: {score}')
+          
+          new_row = {
+              'timestamp_utc': datetime.utcnow().isoformat() + 'Z',
+              'team': team,
+              'github_user': user,
+              'model_type': 'participant',
+              'combined_nmae': score,
+              'pressure_nmae': scores.get('pressure_nmae', 0),
+              'temperature_nmae': scores.get('temperature_nmae', 0),
+              'speed_nmae': scores.get('speed_nmae', 0),
+              'notes': 'GitHub Submission'
+          }
+          
+          df_new = pd.DataFrame([new_row])
+          
+          if os.path.exists(csv_path):
+              df_old = pd.read_csv(csv_path)
+              df_out = pd.concat([df_old, df_new], ignore_index=True)
+          else:
+              df_out = df_new
+              
+          df_out.to_csv(csv_path, index=False)
+          print('Leaderboard CSV updated.')
+          "
+
+      - name: Commit Leaderboard Update
+        if: success()
+        run: |
+          cd organizer_repo
+          git config user.name "Leaderboard Bot"
+          git config user.email "bot@github.com"
+
+          python competition/render_leaderboard.py
+
+          git add leaderboard/leaderboard.csv leaderboard/leaderboard.md docs/leaderboard.csv docs/leaderboard_data.js
+          
+          if git diff --staged --quiet; then
+            echo "No changes to leaderboard"
+          else
+            git commit -m "Update leaderboard: ${{ steps.find_sub.outputs.team_name }} (@${{ github.actor }})"
+            git pull --rebase origin master
+            git push
+          fi
+
+      - name: Post Result Comment
+        if: always()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            let body = '## Submission Scoring System\n\n';
+            
+            let is_success = "${{ steps.score.outcome }}" === "success";
+            
+            if (fs.existsSync('score_report.md')) {
+                const report = fs.readFileSync('score_report.md', 'utf8');
+                body += report;
+                
+                if (is_success) {
+                   body += '\n\n✅ **Score recorded!** Check the [Leaderboard](https://vinitsingroha.github.io/GNN-Challenge/leaderboard.html).\n\n*This PR has been automatically closed. Your submission files are NOT stored in the repository.*';
+                } else {
+                   body += '\n\n❌ **Scoring Failed.** Please check the error above and fix your submission.';
+                }
+            } else {
+                body += '❌ **Scoring Failed.** Critical error (incorrect file placement or decryption issue).';
+            }
+            
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: body
+            });
+
+      - name: Close PR (Don't Merge)
+        if: always()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.pulls.update({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              pull_number: context.issue.number,
+              state: 'closed'
+            });
+
+      - name: Cleanup
+        if: always()
+        run: rm -f test_labels.csv score_report.md score_data.json
