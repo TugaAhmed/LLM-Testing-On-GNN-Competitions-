@@ -1,0 +1,8 @@
+- Load and preprocess the node and edge data.
+- Construct a PyTorch Geometric graph data object.
+- Define a Graph Neural Network (GNN) model architecture.
+- Split the training data into training and validation sets.
+- Train the GNN model with early stopping based on validation performance.
+- Generate predictions for the test set.
+- Write the predictions to a CSV file in the required format.
+- Ensure reproducibility by setting random seeds.

@@ -1,0 +1,48 @@
+attempt=5
+returncode=0
+elapsed_sec=10.24
+
+STDOUT:
+Epoch: 001, Loss: 1.1139, Val Macro-F1: 0.3893
+Epoch: 002, Loss: 1.5512, Val Macro-F1: 0.4421
+Epoch: 003, Loss: 0.8380, Val Macro-F1: 0.4421
+Epoch: 004, Loss: 1.1325, Val Macro-F1: 0.4421
+Epoch: 005, Loss: 1.0342, Val Macro-F1: 0.4421
+Epoch: 006, Loss: 0.7713, Val Macro-F1: 0.5221
+Epoch: 007, Loss: 0.6016, Val Macro-F1: 0.7040
+Epoch: 008, Loss: 0.6868, Val Macro-F1: 0.6867
+Epoch: 009, Loss: 0.7275, Val Macro-F1: 0.7313
+Epoch: 010, Loss: 0.5867, Val Macro-F1: 0.6456
+Epoch: 011, Loss: 0.4941, Val Macro-F1: 0.4421
+Epoch: 012, Loss: 0.5154, Val Macro-F1: 0.4421
+Epoch: 013, Loss: 0.5428, Val Macro-F1: 0.4421
+Epoch: 014, Loss: 0.5524, Val Macro-F1: 0.4421
+Epoch: 015, Loss: 0.5014, Val Macro-F1: 0.4538
+Epoch: 016, Loss: 0.4357, Val Macro-F1: 0.6691
+Epoch: 017, Loss: 0.4034, Val Macro-F1: 0.7567
+Epoch: 018, Loss: 0.4091, Val Macro-F1: 0.7515
+Epoch: 019, Loss: 0.4243, Val Macro-F1: 0.7450
+Epoch: 020, Loss: 0.4157, Val Macro-F1: 0.7260
+Epoch: 021, Loss: 0.3851, Val Macro-F1: 0.6679
+Epoch: 022, Loss: 0.3730, Val Macro-F1: 0.6301
+Epoch: 023, Loss: 0.3737, Val Macro-F1: 0.6185
+Epoch: 024, Loss: 0.3605, Val Macro-F1: 0.6854
+Epoch: 025, Loss: 0.3471, Val Macro-F1: 0.7821
+Epoch: 026, Loss: 0.3454, Val Macro-F1: 0.8050
+Epoch: 027, Loss: 0.3428, Val Macro-F1: 0.8135
+Epoch: 028, Loss: 0.3357, Val Macro-F1: 0.8002
+Epoch: 029, Loss: 0.3310, Val Macro-F1: 0.7731
+Epoch: 030, Loss: 0.3292, Val Macro-F1: 0.7543
+Epoch: 031, Loss: 0.3315, Val Macro-F1: 0.7669
+Epoch: 032, Loss: 0.3250, Val Macro-F1: 0.7834
+Epoch: 033, Loss: 0.3228, Val Macro-F1: 0.7915
+Epoch: 034, Loss: 0.3175, Val Macro-F1: 0.7916
+Epoch: 035, Loss: 0.3189, Val Macro-F1: 0.7889
+Epoch: 036, Loss: 0.3174, Val Macro-F1: 0.7867
+Epoch: 037, Loss: 0.3140, Val Macro-F1: 0.7858
+Early stopping!
+Submission file generated successfully.
+
+
+STDERR:
+
