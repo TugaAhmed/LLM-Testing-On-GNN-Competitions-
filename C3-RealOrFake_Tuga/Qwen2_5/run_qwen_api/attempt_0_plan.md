@@ -1,0 +1,9 @@
+- Load and preprocess the dataset using the provided `GraphDataset` class.
+- Combine spaCy, BERT, and user profile features into a single feature matrix.
+- Define a GNN model architecture using `torch_geometric` that includes multiple GAT layers, global max pooling, and additional layers for processing combined features.
+- Set seeds for reproducibility.
+- Train the model on the training set and validate on the validation set.
+- Track the best validation accuracy to save the model.
+- Generate predictions for the test set.
+- Write the predictions to `submission.csv` in the required format.
+- Ensure the script runs on CPU within 60 minutes.

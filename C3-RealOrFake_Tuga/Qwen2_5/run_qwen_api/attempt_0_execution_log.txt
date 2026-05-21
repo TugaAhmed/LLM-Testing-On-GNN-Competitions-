@@ -1,0 +1,41 @@
+attempt=0
+returncode=0
+elapsed_sec=1712.42
+
+STDOUT:
+Epoch 00 | TrainLoss: 0.6362 | ValAcc: 0.5549 | ValF1: 0.6981
+Epoch 01 | TrainLoss: 0.4782 | ValAcc: 0.5293 | ValF1: 0.6862
+Epoch 02 | TrainLoss: 0.4324 | ValAcc: 0.7491 | ValF1: 0.8023
+Epoch 03 | TrainLoss: 0.3633 | ValAcc: 0.6722 | ValF1: 0.7584
+Epoch 04 | TrainLoss: 0.4469 | ValAcc: 0.5147 | ValF1: 0.6796
+Epoch 05 | TrainLoss: 0.3720 | ValAcc: 0.8205 | ValF1: 0.8506
+Epoch 06 | TrainLoss: 0.3468 | ValAcc: 0.7509 | ValF1: 0.8046
+Epoch 07 | TrainLoss: 0.3130 | ValAcc: 0.7894 | ValF1: 0.8286
+Epoch 08 | TrainLoss: 0.3014 | ValAcc: 0.8315 | ValF1: 0.8585
+Epoch 09 | TrainLoss: 0.2981 | ValAcc: 0.5440 | ValF1: 0.6930
+Epoch 10 | TrainLoss: 0.3189 | ValAcc: 0.6575 | ValF1: 0.7497
+Epoch 11 | TrainLoss: 0.2763 | ValAcc: 0.5238 | ValF1: 0.6837
+Epoch 12 | TrainLoss: 0.3316 | ValAcc: 0.7967 | ValF1: 0.8346
+Epoch 13 | TrainLoss: 0.2959 | ValAcc: 0.9560 | ValF1: 0.9574
+Epoch 14 | TrainLoss: 0.3225 | ValAcc: 0.5147 | ValF1: 0.6796
+Epoch 15 | TrainLoss: 0.3150 | ValAcc: 0.9066 | ValF1: 0.9154
+Epoch 16 | TrainLoss: 0.3262 | ValAcc: 0.5183 | ValF1: 0.6812
+Epoch 17 | TrainLoss: 0.4064 | ValAcc: 0.5147 | ValF1: 0.6796
+Epoch 18 | TrainLoss: 0.3120 | ValAcc: 0.5788 | ValF1: 0.7096
+Epoch 19 | TrainLoss: 0.3758 | ValAcc: 0.5147 | ValF1: 0.6796
+Epoch 20 | TrainLoss: 0.4807 | ValAcc: 0.9670 | ValF1: 0.9686
+Epoch 21 | TrainLoss: 0.2980 | ValAcc: 0.7747 | ValF1: 0.8189
+Epoch 22 | TrainLoss: 0.2612 | ValAcc: 0.7692 | ValF1: 0.8158
+Epoch 23 | TrainLoss: 0.2683 | ValAcc: 0.9469 | ValF1: 0.9499
+Epoch 24 | TrainLoss: 0.3012 | ValAcc: 0.8095 | ValF1: 0.8434
+Epoch 25 | TrainLoss: 0.3029 | ValAcc: 0.5275 | ValF1: 0.6854
+Epoch 26 | TrainLoss: 0.3054 | ValAcc: 0.7253 | ValF1: 0.7887
+Epoch 27 | TrainLoss: 0.3373 | ValAcc: 0.5806 | ValF1: 0.7105
+Epoch 28 | TrainLoss: 0.3093 | ValAcc: 0.8333 | ValF1: 0.8594
+Epoch 29 | TrainLoss: 0.5464 | ValAcc: 0.8974 | ValF1: 0.9085
+
+
+STDERR:
+C:\Users\Tuga\Desktop\LLM test\venv1\Lib\site-packages\torch_geometric\deprecation.py:26: UserWarning: 'data.DataLoader' is deprecated, use 'loader.DataLoader' instead
+  warnings.warn(out)
+
