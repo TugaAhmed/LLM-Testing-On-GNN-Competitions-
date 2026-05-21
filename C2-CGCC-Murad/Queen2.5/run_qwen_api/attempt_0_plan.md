@@ -1,0 +1,11 @@
+- Load and preprocess the training and test datasets using the provided `nx_to_pyg` function.
+- Extract node features (centered & scaled x-coordinate, centered & scaled y-coordinate, normalized node degree).
+- Build a Graph Convolutional Network (GCN) using `torch_geometric`.
+- Implement mean pooling and max pooling to generate graph embeddings.
+- Use a linear layer to output logits for the three classes.
+- Apply class weights to handle class imbalance during training.
+- Use Adam optimizer and cross-entropy loss for training.
+- Split the training set into 70% training and 30% validation sets for internal evaluation.
+- Evaluate the model using validation accuracy and macro-F1 score.
+- Generate predictions for the test set.
+- Write the predictions to `submission.csv` in the required format.

@@ -1,0 +1,6 @@
+- Import the missing `random` module.
+- Ensure the script correctly handles the data loading and preprocessing.
+- Train the model using the specified architecture and parameters.
+- Evaluate the model on the validation set.
+- Generate predictions for the test set.
+- Write the predictions to `submission.csv` in the required format.

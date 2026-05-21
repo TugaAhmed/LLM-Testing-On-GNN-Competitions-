@@ -1,0 +1,27 @@
+attempt=2
+returncode=1
+elapsed_sec=5.17
+
+STDOUT:
+
+
+STDERR:
+Traceback (most recent call last):
+  File "C:\Users\Tuga\Desktop\LLM test\CGCC-Murad\CGCC\solution.py", line 175, in <module>
+    main()
+  File "C:\Users\Tuga\Desktop\LLM test\CGCC-Murad\CGCC\solution.py", line 153, in main
+    train_model(model, train_loader, val_loader, optimizer, criterion, device)
+  File "C:\Users\Tuga\Desktop\LLM test\CGCC-Murad\CGCC\solution.py", line 95, in train_model
+    out = model(data)
+          ^^^^^^^^^^^
+  File "C:\Users\Tuga\Desktop\LLM test\venv1\Lib\site-packages\torch\nn\modules\module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tuga\Desktop\LLM test\venv1\Lib\site-packages\torch\nn\modules\module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tuga\Desktop\LLM test\CGCC-Murad\CGCC\solution.py", line 79, in forward
+    x_mean = torch_geometric.nn.global_mean_pool(x, batch)
+             ^^^^^^^^^^^^^^^
+NameError: name 'torch_geometric' is not defined
+

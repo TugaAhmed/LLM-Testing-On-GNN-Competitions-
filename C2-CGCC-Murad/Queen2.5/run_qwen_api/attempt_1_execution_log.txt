@@ -1,0 +1,38 @@
+attempt=1
+returncode=1
+elapsed_sec=4.97
+
+STDOUT:
+
+
+STDERR:
+C:\Users\Tuga\Desktop\LLM test\venv1\Lib\site-packages\torch_geometric\deprecation.py:26: UserWarning: 'data.DataLoader' is deprecated, use 'loader.DataLoader' instead
+  warnings.warn(out)
+Traceback (most recent call last):
+  File "C:\Users\Tuga\Desktop\LLM test\CGCC-Murad\CGCC\solution.py", line 174, in <module>
+    main()
+  File "C:\Users\Tuga\Desktop\LLM test\CGCC-Murad\CGCC\solution.py", line 152, in main
+    train_model(model, train_loader, val_loader, optimizer, criterion, device)
+  File "C:\Users\Tuga\Desktop\LLM test\CGCC-Murad\CGCC\solution.py", line 91, in train_model
+    for data in train_loader:
+                ^^^^^^^^^^^^
+  File "C:\Users\Tuga\Desktop\LLM test\venv1\Lib\site-packages\torch\utils\data\dataloader.py", line 733, in __next__
+    data = self._next_data()
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tuga\Desktop\LLM test\venv1\Lib\site-packages\torch\utils\data\dataloader.py", line 789, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tuga\Desktop\LLM test\venv1\Lib\site-packages\torch\utils\data\_utils\fetch.py", line 50, in fetch
+    data = self.dataset.__getitems__(possibly_batched_index)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tuga\Desktop\LLM test\venv1\Lib\site-packages\torch\utils\data\dataset.py", line 416, in __getitems__
+    return [self.dataset[self.indices[idx]] for idx in indices]
+            ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tuga\Desktop\LLM test\CGCC-Murad\CGCC\solution.py", line 55, in __getitem__
+    data = nx_to_pyg(path)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Tuga\Desktop\LLM test\CGCC-Murad\CGCC\solution.py", line 39, in nx_to_pyg
+    return Data(x=x, edge_index=edge_index, num_nodes=len(nodes))
+           ^^^^
+NameError: name 'Data' is not defined
+

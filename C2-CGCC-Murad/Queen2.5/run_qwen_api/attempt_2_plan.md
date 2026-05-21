@@ -1,0 +1,7 @@
+- Import the missing `Data` class from `torch_geometric.data`.
+- Correct the deprecation warning by using `torch_geometric.loader.DataLoader` instead of `torch_geometric.data.DataLoader`.
+- Ensure the script correctly handles the data loading and preprocessing.
+- Train the model using the specified architecture and parameters.
+- Evaluate the model on the validation set.
+- Generate predictions for the test set.
+- Write the predictions to `submission.csv` in the required format.
