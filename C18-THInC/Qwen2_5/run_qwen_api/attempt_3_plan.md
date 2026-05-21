@@ -1,0 +1,3 @@
+- Ensure that the script writes the submission file in the correct directory.
+- Verify that the file path for writing the submission file is correct.
+- Re-run the script to confirm that the submission file is generated in the expected location.

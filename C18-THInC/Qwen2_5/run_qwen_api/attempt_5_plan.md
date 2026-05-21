@@ -1,0 +1,6 @@
+- Ensure that the script writes the submission file in the correct directory.
+- Verify that the file path for writing the submission file is correct.
+- Check if the script is being executed from the correct directory.
+- Explicitly specify the path to write the submission file in the repository root.
+- Add a check to confirm the file is written correctly.
+- Re-run the script to confirm that the submission file is generated in the expected location.

@@ -1,0 +1,5 @@
+- Ensure that the node indices in the edge list match the number of nodes in the training graph.
+- Verify that the node indices in the test edge list match the number of nodes in the test graph.
+- Correct any discrepancies in node indexing.
+- Re-run the training and prediction process.
+- Write the predictions to a CSV file in the required format.

@@ -1,0 +1,141 @@
+import os
+import numpy as np
+import pandas as pd
+import torch
+import torch.nn.functional as F
+import random
+from torch_geometric.data import Data
+from torch_geometric.nn import GCNConv
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import f1_score
+
+# Set seeds for reproducibility
+np.random.seed(42)
+torch.manual_seed(42)
+random.seed(42)
+
+# Load data
+train_df = pd.read_csv('data/public/train.csv')
+edge_list_df = pd.read_csv('data/public/edge_list.csv')
+test_nodes_df = pd.read_csv('data/public/test_nodes.csv')
+test_edges_df = pd.read_csv('data/public/test_edges.csv')
+
+# Preprocess training data
+x_train = torch.tensor(train_df[['x', 'y', 'width', 'height']].values, dtype=torch.float)
+y_train = torch.tensor(train_df['label'].values, dtype=torch.long)
+train_val_ids = train_df['id'].values
+
+# Create a mapping from node IDs to indices
+train_id_to_idx = {node_id: idx for idx, node_id in enumerate(train_val_ids)}
+
+# Remap edge_list_df to use these indices
+edge_list_df['source'] = edge_list_df['source'].map(train_id_to_idx)
+edge_list_df['target'] = edge_list_df['target'].map(train_id_to_idx)
+
+# Drop any edges that have invalid indices (None)
+edge_list_df.dropna(inplace=True)
+edge_list_df = edge_list_df.astype(int)
+
+# Split training data into training and validation sets
+train_ids, val_ids = train_test_split(train_val_ids, test_size=0.2, random_state=42)
+train_mask = torch.tensor([i in train_ids for i in train_val_ids], dtype=torch.bool)
+val_mask = torch.tensor([i in val_ids for i in train_val_ids], dtype=torch.bool)
+
+# Create edge index for training graph
+edge_index_train = torch.tensor(edge_list_df.values.T, dtype=torch.long)
+
+# Create Data object for training graph
+data_train = Data(x=x_train, edge_index=edge_index_train, y=y_train, train_mask=train_mask, val_mask=val_mask)
+
+# Preprocess test data
+x_test = torch.tensor(test_nodes_df[['x', 'y', 'width', 'height']].values, dtype=torch.float)
+test_ids = test_nodes_df['id'].values
+
+# Create a mapping from node IDs to indices for test data
+test_id_to_idx = {node_id: idx for idx, node_id in enumerate(test_ids)}
+
+# Remap test_edges_df to use these indices
+test_edges_df['source'] = test_edges_df['source'].map(test_id_to_idx)
+test_edges_df['target'] = test_edges_df['target'].map(test_id_to_idx)
+
+# Drop any edges that have invalid indices (None)
+test_edges_df.dropna(inplace=True)
+test_edges_df = test_edges_df.astype(int)
+
+# Create edge index for test graph
+edge_index_test = torch.tensor(test_edges_df.values.T, dtype=torch.long)
+
+# Create Data object for test graph
+data_test = Data(x=x_test, edge_index=edge_index_test)
+
+# Define the GNN model
+class GCN(torch.nn.Module):
+    def __init__(self, in_channels, hidden_channels, out_channels):
+        super(GCN, self).__init__()
+        self.conv1 = GCNConv(in_channels, hidden_channels)
+        self.conv2 = GCNConv(hidden_channels, out_channels)
+
+    def forward(self, x, edge_index):
+        x = self.conv1(x, edge_index)
+        x = F.relu(x)
+        x = F.dropout(x, training=self.training)
+        x = self.conv2(x, edge_index)
+        return F.log_softmax(x, dim=1)
+
+# Initialize model, optimizer, and loss function
+device = torch.device('cpu')
+model = GCN(data_train.num_features, 16, 4).to(device)
+optimizer = torch.optim.Adam(model.parameters(), lr=0.01, weight_decay=5e-4)
+criterion = torch.nn.NLLLoss()
+
+# Training loop with early stopping
+def train():
+    model.train()
+    optimizer.zero_grad()
+    out = model(data_train.x, data_train.edge_index)
+    loss = criterion(out[data_train.train_mask], data_train.y[data_train.train_mask])
+    loss.backward()
+    optimizer.step()
+    return loss.item()
+
+def validate():
+    model.eval()
+    with torch.no_grad():
+        out = model(data_train.x, data_train.edge_index)
+        pred = out.argmax(dim=1)
+        val_f1 = f1_score(data_train.y[data_train.val_mask].cpu().numpy(), pred[data_train.val_mask].cpu().numpy(), average='macro')
+    return val_f1
+
+best_val_f1 = 0
+patience_counter = 0
+max_patience = 10
+
+for epoch in range(1, 201):
+    train_loss = train()
+    val_f1 = validate()
+    print(f'Epoch {epoch:03d}, Loss: {train_loss:.4f}, Val Macro F1: {val_f1:.4f}')
+    
+    if val_f1 > best_val_f1:
+        best_val_f1 = val_f1
+        patience_counter = 0
+        torch.save(model.state_dict(), 'best_model.pth')
+    else:
+        patience_counter += 1
+        if patience_counter >= max_patience:
+            print('Early stopping triggered.')
+            break
+
+# Load the best model
+model.load_state_dict(torch.load('best_model.pth'))
+model.eval()
+
+# Generate predictions for the test set
+with torch.no_grad():
+    out_test = model(data_test.x, data_test.edge_index)
+    pred_test = out_test.argmax(dim=1).cpu().numpy()
+
+# Write the submission file to the repository root
+submission_df = pd.DataFrame({'id': test_ids, 'y_pred': pred_test})
+submission_df.to_csv('predictions.csv', index=False)
+
+print('Submission file generated successfully.')
