@@ -1,0 +1,7 @@
+- Address the warning about creating tensors from lists of numpy arrays.
+- Fix the error related to calling `numpy()` on a tensor that requires gradients.
+- Ensure the model is properly trained and evaluated.
+- Generate predictions for the test set correctly.
+- Write the submission file in the required format.
+- Ensure reproducibility by setting random seeds.
+- Optimize the script to run within 60 minutes on CPU.

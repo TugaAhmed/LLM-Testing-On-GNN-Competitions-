@@ -1,0 +1,8 @@
+- Load and preprocess the node features and edge data.
+- Define a GNN model architecture (e.g., GraphSAGE).
+- Implement a training loop with negative sampling.
+- Evaluate the model on the validation set.
+- Use the trained model to generate predictions for the test set.
+- Write the predictions to a submission file in the required format.
+- Ensure reproducibility by setting random seeds.
+- Optimize the script to run within 60 minutes on CPU.

@@ -1,0 +1,116 @@
+attempt=0
+returncode=1
+elapsed_sec=2532.29
+
+STDOUT:
+Epoch: 001, Loss: 0.6506, Val AUC-ROC: 0.5234
+Epoch: 002, Loss: 151.1188, Val AUC-ROC: 0.5293
+Epoch: 003, Loss: 2.9813, Val AUC-ROC: 0.5063
+Epoch: 004, Loss: 0.6680, Val AUC-ROC: 0.5000
+Epoch: 005, Loss: 0.6704, Val AUC-ROC: 0.5000
+Epoch: 006, Loss: 0.6721, Val AUC-ROC: 0.5022
+Epoch: 007, Loss: 0.6733, Val AUC-ROC: 0.5022
+Epoch: 008, Loss: 0.6741, Val AUC-ROC: 0.5022
+Epoch: 009, Loss: 0.6746, Val AUC-ROC: 0.5019
+Epoch: 010, Loss: 0.6749, Val AUC-ROC: 0.4995
+Epoch: 011, Loss: 0.6750, Val AUC-ROC: 0.5006
+Epoch: 012, Loss: 0.6749, Val AUC-ROC: 0.5094
+Epoch: 013, Loss: 0.6744, Val AUC-ROC: 0.5287
+Epoch: 014, Loss: 0.6698, Val AUC-ROC: 0.5159
+Epoch: 015, Loss: 0.6401, Val AUC-ROC: 0.5214
+Epoch: 016, Loss: 0.8693, Val AUC-ROC: 0.5204
+Epoch: 017, Loss: 0.6397, Val AUC-ROC: 0.5254
+Epoch: 018, Loss: 0.6578, Val AUC-ROC: 0.5315
+Epoch: 019, Loss: 0.6712, Val AUC-ROC: 0.5138
+Epoch: 020, Loss: 0.6730, Val AUC-ROC: 0.5001
+Epoch: 021, Loss: 0.6731, Val AUC-ROC: 0.5022
+Epoch: 022, Loss: 0.6729, Val AUC-ROC: 0.5022
+Epoch: 023, Loss: 0.6726, Val AUC-ROC: 0.5019
+Epoch: 024, Loss: 0.6722, Val AUC-ROC: 0.5019
+Epoch: 025, Loss: 0.6719, Val AUC-ROC: 0.5019
+Epoch: 026, Loss: 0.6715, Val AUC-ROC: 0.5019
+Epoch: 027, Loss: 0.6710, Val AUC-ROC: 0.5019
+Epoch: 028, Loss: 0.6706, Val AUC-ROC: 0.5019
+Epoch: 029, Loss: 0.6701, Val AUC-ROC: 0.5019
+Epoch: 030, Loss: 0.6696, Val AUC-ROC: 0.5019
+Epoch: 031, Loss: 0.6691, Val AUC-ROC: 0.5019
+Epoch: 032, Loss: 0.6685, Val AUC-ROC: 0.5019
+Epoch: 033, Loss: 0.6680, Val AUC-ROC: 0.5019
+Epoch: 034, Loss: 0.6674, Val AUC-ROC: 0.4995
+Epoch: 035, Loss: 0.6668, Val AUC-ROC: 0.5005
+Epoch: 036, Loss: 0.6661, Val AUC-ROC: 0.5005
+Epoch: 037, Loss: 0.6655, Val AUC-ROC: 0.5005
+Epoch: 038, Loss: 0.6648, Val AUC-ROC: 0.5005
+Epoch: 039, Loss: 0.6641, Val AUC-ROC: 0.5005
+Epoch: 040, Loss: 0.6634, Val AUC-ROC: 0.5005
+Epoch: 041, Loss: 0.6627, Val AUC-ROC: 0.5005
+Epoch: 042, Loss: 0.6619, Val AUC-ROC: 0.5005
+Epoch: 043, Loss: 0.6611, Val AUC-ROC: 0.5005
+Epoch: 044, Loss: 0.6603, Val AUC-ROC: 0.5005
+Epoch: 045, Loss: 0.6595, Val AUC-ROC: 0.5005
+Epoch: 046, Loss: 0.6587, Val AUC-ROC: 0.5005
+Epoch: 047, Loss: 0.6579, Val AUC-ROC: 0.5005
+Epoch: 048, Loss: 0.6570, Val AUC-ROC: 0.5005
+Epoch: 049, Loss: 0.6562, Val AUC-ROC: 0.5000
+Epoch: 050, Loss: 0.6553, Val AUC-ROC: 0.5000
+Epoch: 051, Loss: 0.6544, Val AUC-ROC: 0.5000
+Epoch: 052, Loss: 0.6536, Val AUC-ROC: 0.5000
+Epoch: 053, Loss: 0.6527, Val AUC-ROC: 0.5000
+Epoch: 054, Loss: 0.6518, Val AUC-ROC: 0.5000
+Epoch: 055, Loss: 0.6509, Val AUC-ROC: 0.5000
+Epoch: 056, Loss: 0.6501, Val AUC-ROC: 0.5000
+Epoch: 057, Loss: 0.6492, Val AUC-ROC: 0.5000
+Epoch: 058, Loss: 0.6483, Val AUC-ROC: 0.5000
+Epoch: 059, Loss: 0.6475, Val AUC-ROC: 0.5000
+Epoch: 060, Loss: 0.6467, Val AUC-ROC: 0.5000
+Epoch: 061, Loss: 0.6459, Val AUC-ROC: 0.5000
+Epoch: 062, Loss: 0.6451, Val AUC-ROC: 0.5000
+Epoch: 063, Loss: 0.6443, Val AUC-ROC: 0.5000
+Epoch: 064, Loss: 0.6436, Val AUC-ROC: 0.5000
+Epoch: 065, Loss: 0.6429, Val AUC-ROC: 0.5000
+Epoch: 066, Loss: 0.6423, Val AUC-ROC: 0.5000
+Epoch: 067, Loss: 0.6416, Val AUC-ROC: 0.5000
+Epoch: 068, Loss: 0.6410, Val AUC-ROC: 0.5000
+Epoch: 069, Loss: 0.6405, Val AUC-ROC: 0.5000
+Epoch: 070, Loss: 0.6400, Val AUC-ROC: 0.5000
+Epoch: 071, Loss: 0.6395, Val AUC-ROC: 0.5000
+Epoch: 072, Loss: 0.6390, Val AUC-ROC: 0.5000
+Epoch: 073, Loss: 0.6386, Val AUC-ROC: 0.5000
+Epoch: 074, Loss: 0.6383, Val AUC-ROC: 0.5000
+Epoch: 075, Loss: 0.6380, Val AUC-ROC: 0.5000
+Epoch: 076, Loss: 0.6377, Val AUC-ROC: 0.5000
+Epoch: 077, Loss: 0.6374, Val AUC-ROC: 0.5000
+Epoch: 078, Loss: 0.6372, Val AUC-ROC: 0.5000
+Epoch: 079, Loss: 0.6370, Val AUC-ROC: 0.5000
+Epoch: 080, Loss: 0.6369, Val AUC-ROC: 0.5000
+Epoch: 081, Loss: 0.6368, Val AUC-ROC: 0.5000
+Epoch: 082, Loss: 0.6367, Val AUC-ROC: 0.5000
+Epoch: 083, Loss: 0.6366, Val AUC-ROC: 0.5000
+Epoch: 084, Loss: 0.6366, Val AUC-ROC: 0.5000
+Epoch: 085, Loss: 0.6365, Val AUC-ROC: 0.5000
+Epoch: 086, Loss: 0.6365, Val AUC-ROC: 0.5000
+Epoch: 087, Loss: 0.6365, Val AUC-ROC: 0.5000
+Epoch: 088, Loss: 0.6365, Val AUC-ROC: 0.5000
+Epoch: 089, Loss: 0.6365, Val AUC-ROC: 0.5000
+Epoch: 090, Loss: 0.6365, Val AUC-ROC: 0.5000
+Epoch: 091, Loss: 0.6366, Val AUC-ROC: 0.5000
+Epoch: 092, Loss: 0.6366, Val AUC-ROC: 0.5000
+Epoch: 093, Loss: 0.6366, Val AUC-ROC: 0.5000
+Epoch: 094, Loss: 0.6366, Val AUC-ROC: 0.5000
+Epoch: 095, Loss: 0.6366, Val AUC-ROC: 0.5000
+Epoch: 096, Loss: 0.6366, Val AUC-ROC: 0.5000
+Epoch: 097, Loss: 0.6366, Val AUC-ROC: 0.5000
+Epoch: 098, Loss: 0.6366, Val AUC-ROC: 0.5000
+Epoch: 099, Loss: 0.6366, Val AUC-ROC: 0.5000
+Epoch: 100, Loss: 0.6366, Val AUC-ROC: 0.5000
+
+
+STDERR:
+C:\Users\Tuga\Desktop\LLM test\C10_netlink_arina\NetLinkArena\solution.py:25: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\utils\tensor_new.cpp:257.)
+  edge_index = torch.tensor([train_edges['source'].values, train_edges['target'].values], dtype=torch.long)
+Traceback (most recent call last):
+  File "C:\Users\Tuga\Desktop\LLM test\C10_netlink_arina\NetLinkArena\solution.py", line 117, in <module>
+    'y_pred': pred.numpy()
+              ^^^^^^^^^^^^
+RuntimeError: Can't call numpy() on Tensor that requires grad. Use tensor.detach().numpy() instead.
+
