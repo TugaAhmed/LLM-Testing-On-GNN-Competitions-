@@ -1,0 +1,13 @@
+attempt=2
+returncode=0
+elapsed_sec=9.18
+
+STDOUT:
+Epoch: 0100, Train Loss: 0.0144, Val Acc: 0.5500
+Epoch: 0200, Train Loss: 0.0134, Val Acc: 0.5860
+Early stopping at epoch 274
+Submission file generated successfully.
+
+
+STDERR:
+

@@ -1,0 +1,8 @@
+- Correct the issue with the mismatched shapes between the mask and the indexed tensor.
+- Ensure the dataset is correctly loaded and preprocessed.
+- Define a Graph Neural Network (GNN) architecture.
+- Implement a training loop with early stopping based on validation performance.
+- Evaluate the model on the validation set to tune hyperparameters.
+- Generate predictions for the test set.
+- Write the predictions to a CSV file in the required format.
+- Ensure reproducibility by setting random seeds for numpy, torch, and random.

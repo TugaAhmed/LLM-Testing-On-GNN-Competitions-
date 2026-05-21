@@ -1,0 +1,7 @@
+- Load and preprocess the dataset, including adding Gaussian noise to node features.
+- Define a Graph Neural Network (GNN) architecture, starting with a simple GCN and potentially adding more complex layers.
+- Implement a training loop with early stopping based on validation performance.
+- Evaluate the model on the validation set to tune hyperparameters.
+- Generate predictions for the test set.
+- Write the predictions to a CSV file in the required format.
+- Ensure reproducibility by setting random seeds for numpy, torch, and random.

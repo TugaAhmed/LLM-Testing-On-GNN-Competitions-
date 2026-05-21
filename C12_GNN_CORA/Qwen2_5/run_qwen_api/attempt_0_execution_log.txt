@@ -1,0 +1,14 @@
+attempt=0
+returncode=1
+elapsed_sec=5.62
+
+STDOUT:
+
+
+STDERR:
+Traceback (most recent call last):
+  File "C:\Users\Tuga\Desktop\LLM test\C12_GNN_CORA\GNN_CoRA\solution.py", line 33, in <module>
+    train_mask = torch.zeros(num_nodes, dtype=torch.bool)
+                             ^^^^^^^^^
+NameError: name 'num_nodes' is not defined
+
