@@ -1,0 +1,23 @@
+attempt=1
+returncode=1
+elapsed_sec=7.36
+
+STDOUT:
+
+
+STDERR:
+Traceback (most recent call last):
+  File "C:\Users\Tuga\Desktop\LLM test\C15-OctoNode Cup-\OctoNode_Cup\solution.py", line 100, in <module>
+    loss = train()
+           ^^^^^^^
+  File "C:\Users\Tuga\Desktop\LLM test\C15-OctoNode Cup-\OctoNode_Cup\solution.py", line 81, in train
+    loss = criterion(out, data.y[data.train_mask], weight=class_weights)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tuga\Desktop\LLM test\venv1\Lib\site-packages\torch\nn\modules\module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tuga\Desktop\LLM test\venv1\Lib\site-packages\torch\nn\modules\module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: NLLLoss.forward() got an unexpected keyword argument 'weight'
+

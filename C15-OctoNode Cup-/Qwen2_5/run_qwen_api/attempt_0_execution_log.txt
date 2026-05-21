@@ -1,0 +1,14 @@
+attempt=0
+returncode=1
+elapsed_sec=7.03
+
+STDOUT:
+
+
+STDERR:
+Traceback (most recent call last):
+  File "C:\Users\Tuga\Desktop\LLM test\C15-OctoNode Cup-\OctoNode_Cup\solution.py", line 40, in <module>
+    train_ids, val_ids = train_test_split(
+                         ^^^^^^^^^^^^^^^^
+NameError: name 'train_test_split' is not defined
+

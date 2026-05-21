@@ -1,0 +1,47 @@
+attempt=2
+returncode=0
+elapsed_sec=17.96
+
+STDOUT:
+Epoch: 001, Loss: 642.2045, Train Acc: 0.7417, Val Acc: 0.7419, Val F1: 0.4265
+Epoch: 002, Loss: 1382.0114, Train Acc: 0.7396, Val Acc: 0.7402, Val F1: 0.4315
+Epoch: 003, Loss: 997.2653, Train Acc: 0.6862, Val Acc: 0.6867, Val F1: 0.4794
+Epoch: 004, Loss: 441.6832, Train Acc: 0.2665, Val Acc: 0.2669, Val F1: 0.2274
+Epoch: 005, Loss: 566.5576, Train Acc: 0.2590, Val Acc: 0.2598, Val F1: 0.2101
+Epoch: 006, Loss: 697.1840, Train Acc: 0.2615, Val Acc: 0.2634, Val F1: 0.2186
+Epoch: 007, Loss: 567.6826, Train Acc: 0.3063, Val Acc: 0.3105, Val F1: 0.3044
+Epoch: 008, Loss: 367.2188, Train Acc: 0.6870, Val Acc: 0.6892, Val F1: 0.4841
+Epoch: 009, Loss: 315.8399, Train Acc: 0.7248, Val Acc: 0.7255, Val F1: 0.4533
+Epoch: 010, Loss: 410.9430, Train Acc: 0.7299, Val Acc: 0.7316, Val F1: 0.4471
+Epoch: 011, Loss: 432.6560, Train Acc: 0.7256, Val Acc: 0.7266, Val F1: 0.4523
+Epoch: 012, Loss: 333.1464, Train Acc: 0.7063, Val Acc: 0.7094, Val F1: 0.4765
+Epoch: 013, Loss: 286.7855, Train Acc: 0.5617, Val Acc: 0.5656, Val F1: 0.4952
+Epoch: 014, Loss: 191.6090, Train Acc: 0.3053, Val Acc: 0.3054, Val F1: 0.2939
+Epoch: 015, Loss: 227.7438, Train Acc: 0.2796, Val Acc: 0.2822, Val F1: 0.2555
+Epoch: 016, Loss: 232.1456, Train Acc: 0.2778, Val Acc: 0.2798, Val F1: 0.2502
+Epoch: 017, Loss: 215.7417, Train Acc: 0.2879, Val Acc: 0.2863, Val F1: 0.2634
+Epoch: 018, Loss: 189.4724, Train Acc: 0.3391, Val Acc: 0.3377, Val F1: 0.3342
+Epoch: 019, Loss: 131.7910, Train Acc: 0.5414, Val Acc: 0.5454, Val F1: 0.4966
+Epoch: 020, Loss: 102.8648, Train Acc: 0.6671, Val Acc: 0.6666, Val F1: 0.5052
+Epoch: 021, Loss: 105.5473, Train Acc: 0.7008, Val Acc: 0.7051, Val F1: 0.4971
+Epoch: 022, Loss: 108.8463, Train Acc: 0.7098, Val Acc: 0.7119, Val F1: 0.4897
+Epoch: 023, Loss: 106.7369, Train Acc: 0.7087, Val Acc: 0.7091, Val F1: 0.4912
+Epoch: 024, Loss: 101.2489, Train Acc: 0.6989, Val Acc: 0.7037, Val F1: 0.5073
+Epoch: 025, Loss: 80.6579, Train Acc: 0.6749, Val Acc: 0.6797, Val F1: 0.5207
+Epoch: 026, Loss: 64.4514, Train Acc: 0.6310, Val Acc: 0.6303, Val F1: 0.5250
+Epoch: 027, Loss: 53.2225, Train Acc: 0.5404, Val Acc: 0.5521, Val F1: 0.5123
+Epoch: 028, Loss: 45.2029, Train Acc: 0.4368, Val Acc: 0.4387, Val F1: 0.4347
+Epoch: 029, Loss: 43.0027, Train Acc: 0.3715, Val Acc: 0.3690, Val F1: 0.3681
+Epoch: 030, Loss: 39.6195, Train Acc: 0.3485, Val Acc: 0.3450, Val F1: 0.3400
+Epoch: 031, Loss: 39.1091, Train Acc: 0.3422, Val Acc: 0.3392, Val F1: 0.3326
+Epoch: 032, Loss: 35.8649, Train Acc: 0.3434, Val Acc: 0.3412, Val F1: 0.3355
+Epoch: 033, Loss: 31.2525, Train Acc: 0.3533, Val Acc: 0.3538, Val F1: 0.3505
+Epoch: 034, Loss: 26.9997, Train Acc: 0.3729, Val Acc: 0.3705, Val F1: 0.3694
+Epoch: 035, Loss: 22.8968, Train Acc: 0.4004, Val Acc: 0.3966, Val F1: 0.3965
+Epoch: 036, Loss: 19.0032, Train Acc: 0.4388, Val Acc: 0.4352, Val F1: 0.4322
+Early stopping
+Submission file generated successfully.
+
+
+STDERR:
+

@@ -1,0 +1,10 @@
+- Import the `train_test_split` function from `sklearn.model_selection`.
+- Load and preprocess the dataset, including node features, edges, and labels.
+- Construct a PyTorch Geometric Data object from the preprocessed data.
+- Define a simple GNN model architecture using GCNConv layers.
+- Implement a training loop with early stopping based on validation performance.
+- Evaluate the model on the validation set to tune hyperparameters.
+- Generate predictions for the test set.
+- Write the predictions to a CSV file in the required format.
+- Ensure reproducibility by setting random seeds for numpy, torch, and random.
+- Adjust the loss function to handle class weights correctly.
